@@ -1,4 +1,4 @@
-# 03.3 — AGENCIJE
+# 03.1 — SREDIŠNJA UPRAVA
 
 IMPERIOR — 03 INSTITUCIJSKA I UPRAVNA ZONA
 
@@ -7,7 +7,7 @@ Verzija: 1.0
 
 ## SVRHA
 
-Ovaj dokument definira područje **Agencije** unutar zone **03 — INSTITUCIJSKA I UPRAVNA ZONA** i njegovo mjesto u cjelovitom sustavu IMPERIOR.
+Ovaj dokument definira područje **Središnja uprava** unutar zone **03 — INSTITUCIJSKA I UPRAVNA ZONA** i njegovo mjesto u cjelovitom sustavu IMPERIOR.
 
 ## PODRUČJE PRIMJENE
 
