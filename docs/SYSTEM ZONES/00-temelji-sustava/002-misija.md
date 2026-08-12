@@ -13,7 +13,7 @@ Ovaj dokument definira područje **Misija** unutar zone **00 — TEMELJI SUSTAVA
 
 Dokument utvrđuje osnovni okvir, odgovornosti, povezanost s drugim dijelovima sustava te načela upravljanja, provedbe, nadzora i razvoja.
 
-## TEMELJNA NAČELA
+## TEMELJNA NAČELA 
 
 - jasno definirane odgovornosti i ovlasti
 - dokumentiran i sljediv način rada
