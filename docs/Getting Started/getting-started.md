@@ -9,7 +9,7 @@ Centralna dokumentacijska i organizacijska arhitektura projekta IMPERIOR.
 
 SYSTEM CORE
 
-[→ IMPERIOR DNK]()
+→[ IMPERIOR DNK](https://imperior.readme.io/update/docs/imperior-dnk)
 Glavna struktura i hijerarhija sustava
 
 → IMPERIOR ORGANIZATION
