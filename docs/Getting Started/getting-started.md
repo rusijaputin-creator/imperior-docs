@@ -15,7 +15,7 @@ Glavna struktura i hijerarhija sustava
 [→ IMPERIOR ORGANIZATION](https://imperior.readme.io/update/docs/imperior-organization)
 Organizacijska arhitektura
 
-→ IMPERIOR MODULES
+[→ IMPERIOR MODULES](https://imperior.readme.io/update/docs/imperior-modules)
 Moduli sustava
 
 → IMPERIOR DOCUMENT REGISTRY
