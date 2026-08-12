@@ -21,7 +21,7 @@ Moduli sustava
 [→ IMPERIOR DOCUMENT REGISTRY](https://imperior.readme.io/update/docs/imperior-document-registry)
 Glavni registar dokumentacije
 
-→ SYSTEM ZONES
+[→ SYSTEM ZONES](https://imperior.readme.io/update/docs/00-temelji-sustavahttps://imperior.readme.io/update/docs/02-strate%C5%A1ka-zona)
 Zone 00–17
 
 <br />
