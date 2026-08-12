@@ -1,4 +1,4 @@
-# 05.2 — TEMELJNI ZDRAVSTVENI SUSTAV
+# 05.1 — UPRAVLJANJE ZDRAVSTVENIM SUSTAVOM
 
 IMPERIOR — 05 ZDRAVSTVENA ZONA
 
@@ -7,7 +7,7 @@ Verzija: 1.0
 
 ## SVRHA
 
-Ovaj dokument definira područje **Temeljni zdravstveni sustav** unutar zone **05 — ZDRAVSTVENA ZONA** i njegovo mjesto u cjelovitom sustavu IMPERIOR.
+Ovaj dokument definira područje **Upravljanje zdravstvenim sustavom** unutar zone **05 — ZDRAVSTVENA ZONA** i njegovo mjesto u cjelovitom sustavu IMPERIOR.
 
 ## PODRUČJE PRIMJENE
 

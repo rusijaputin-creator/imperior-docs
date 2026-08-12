@@ -1,10 +1,30 @@
----
-title: 05.7 — DIGITALNO ZDRAVSTVO
-excerpt: >-
-  Definira digitalne zdravstvene kartone, registre, telemedicinu, zdravstvene
-  podatke i analitičke sustave.
-deprecated: false
-hidden: false
-metadata:
-  robots: index
----
+# 05.7 — DIGITALNO ZDRAVSTVO
+
+IMPERIOR — 05 ZDRAVSTVENA ZONA
+
+Status: ACTIVE  
+Verzija: 1.0
+
+## SVRHA
+
+Ovaj dokument definira područje **Digitalno zdravstvo** unutar zone **05 — ZDRAVSTVENA ZONA** i njegovo mjesto u cjelovitom sustavu IMPERIOR.
+
+## PODRUČJE PRIMJENE
+
+Dokument utvrđuje osnovni okvir, odgovornosti, povezanost s drugim dijelovima sustava te načela upravljanja, provedbe, nadzora i razvoja.
+
+## TEMELJNA NAČELA
+
+- jasno definirane odgovornosti i ovlasti
+- dokumentiran i sljediv način rada
+- međusobna povezanost zona i sustava
+- kontrola kvalitete i periodična revizija
+- kontinuirani razvoj i usklađivanje sustava
+
+## POVEZANOST S IMPERIOR SUSTAVOM
+
+Područje se provodi u koordinaciji s ostalim zonama, glavnim registrima, sigurnosnim pravilima i sustavom nadzora kvalitete IMPERIOR-a.
+
+## STATUS DOKUMENTA
+
+ACTIVE — sastavni dio dokumentacijske strukture IMPERIOR v1.0.
