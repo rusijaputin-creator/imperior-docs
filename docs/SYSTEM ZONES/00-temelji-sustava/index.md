@@ -8,7 +8,6 @@ Verzija: 1.0
 ## STRUKTURA ZONE
 
 - **[00.1 — VIZIJA](001-vizija.md)**
-- **[00.1 — VIZIJA](001-vizija.md)**
 - **[00.2 — MISIJA](002-misija.md)**
 - **[00.3 — CILJEVI](003-ciljevi.md)**
 - **[00.4 — VRIJEDNOSTI](004-vrijednosti.md)**
