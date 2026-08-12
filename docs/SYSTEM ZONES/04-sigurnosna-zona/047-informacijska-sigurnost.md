@@ -1,10 +1,30 @@
----
-title: 04.7 — INFORMACIJSKA SIGURNOST
-excerpt: >-
-  Definira zaštitu podataka, kontrolu pristupa, upravljanje sigurnosnim
-  incidentima i kontinuitet sustava.
-deprecated: false
-hidden: false
-metadata:
-  robots: index
----
+# 04.7 — INFORMACIJSKA SIGURNOST
+
+IMPERIOR — 04 SIGURNOSNA ZONA
+
+Status: ACTIVE  
+Verzija: 1.0
+
+## SVRHA
+
+Ovaj dokument definira područje **Informacijska sigurnost** unutar zone **04 — SIGURNOSNA ZONA** i njegovo mjesto u cjelovitom sustavu IMPERIOR.
+
+## PODRUČJE PRIMJENE
+
+Dokument utvrđuje osnovni okvir, odgovornosti, povezanost s drugim dijelovima sustava te načela upravljanja, provedbe, nadzora i razvoja.
+
+## TEMELJNA NAČELA
+
+- jasno definirane odgovornosti i ovlasti
+- dokumentiran i sljediv način rada
+- međusobna povezanost zona i sustava
+- kontrola kvalitete i periodična revizija
+- kontinuirani razvoj i usklađivanje sustava
+
+## POVEZANOST S IMPERIOR SUSTAVOM
+
+Područje se provodi u koordinaciji s ostalim zonama, glavnim registrima, sigurnosnim pravilima i sustavom nadzora kvalitete IMPERIOR-a.
+
+## STATUS DOKUMENTA
+
+ACTIVE — sastavni dio dokumentacijske strukture IMPERIOR v1.0.

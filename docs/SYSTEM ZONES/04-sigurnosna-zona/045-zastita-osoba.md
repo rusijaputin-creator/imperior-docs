@@ -1,4 +1,4 @@
-# 04.2 — POLICIJSKI SUSTAV
+# 04.5 — ZAŠTITA OSOBA
 
 IMPERIOR — 04 SIGURNOSNA ZONA
 
@@ -7,7 +7,7 @@ Verzija: 1.0
 
 ## SVRHA
 
-Ovaj dokument definira područje **Policijski sustav** unutar zone **04 — SIGURNOSNA ZONA** i njegovo mjesto u cjelovitom sustavu IMPERIOR.
+Ovaj dokument definira područje **Zaštita osoba** unutar zone **04 — SIGURNOSNA ZONA** i njegovo mjesto u cjelovitom sustavu IMPERIOR.
 
 ## PODRUČJE PRIMJENE
 
