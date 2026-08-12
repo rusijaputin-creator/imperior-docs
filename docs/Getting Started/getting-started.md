@@ -18,7 +18,7 @@ Organizacijska arhitektura
 [→ IMPERIOR MODULES](https://imperior.readme.io/update/docs/imperior-modules)
 Moduli sustava
 
-→ IMPERIOR DOCUMENT REGISTRY
+[→ IMPERIOR DOCUMENT REGISTRY](https://imperior.readme.io/update/docs/imperior-document-registry)
 Glavni registar dokumentacije
 
 → SYSTEM ZONES
