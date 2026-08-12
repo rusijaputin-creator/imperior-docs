@@ -12,7 +12,7 @@ SYSTEM CORE
 →[ IMPERIOR DNK](https://imperior.readme.io/update/docs/imperior-dnk)
 Glavna struktura i hijerarhija sustava
 
-→ IMPERIOR ORGANIZATION
+[→ IMPERIOR ORGANIZATION](https://imperior.readme.io/update/docs/imperior-organization)
 Organizacijska arhitektura
 
 → IMPERIOR MODULES
