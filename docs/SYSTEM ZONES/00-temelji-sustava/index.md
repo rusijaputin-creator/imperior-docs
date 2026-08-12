@@ -7,7 +7,7 @@ Verzija: 1.0
 
 ## STRUKTURA ZONE
 
-- **00.1 — VIZIJA**
+- **[00.1 — VIZIJA](001-vizija.md)**
 - **00.2 — MISIJA**
 - **00.3 — CILJEVI**
 - **00.4 — VRIJEDNOSTI**
