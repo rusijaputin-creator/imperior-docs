@@ -1,4 +1,4 @@
-# 00.6 — POVELJA IMPERIOR-A
+# 00.5 — TEMELJNA NAČELA
 
 IMPERIOR — 00 TEMELJI SUSTAVA
 
@@ -7,7 +7,7 @@ Verzija: 1.0
 
 ## SVRHA
 
-Ovaj dokument definira područje **Povelja IMPERIOR-a** unutar zone **00 — TEMELJI SUSTAVA** i njegovo mjesto u cjelovitom sustavu IMPERIOR.
+Ovaj dokument definira područje **Temeljna načela** unutar zone **00 — TEMELJI SUSTAVA** i njegovo mjesto u cjelovitom sustavu IMPERIOR.
 
 ## PODRUČJE PRIMJENE
 
