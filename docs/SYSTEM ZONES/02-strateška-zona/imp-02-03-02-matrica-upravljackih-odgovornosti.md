@@ -1,29 +1,35 @@
 # MATRICA UPRAVLJAČKIH ODGOVORNOSTI
 
-**Kod:** IMP-02-03-02  
-**Status:** DRAFT  
-**Verzija:** 1.0  
-**Zona:** 02  
-**Cjelina:** 02.3 Upravljanje sustavom
+Kod: IMP-02-03-02  
+Status: ACTIVE  
+Verzija: 1.0  
+Zona: 02 — STRATEŠKA ZONA  
+Cjelina: 02.3 — UPRAVLJANJE SUSTAVOM
 
 ## 1. SVRHA
-Dokument definira područje „Matrica upravljačkih odgovornosti” unutar odgovarajuće zone sustava IMPERIOR.
 
-## 2. PODRUČJE PRIMJENE
-Primjenjuje se na povezane organizacijske, upravljačke, pravne i dokumentacijske procese.
+Dokument definira matricu uloga i odgovornosti za strateške procese i projekte.
 
-## 3. TEMELJNE ODREDBE
-- svrha i opseg
-- odgovornosti i nadležnosti
-- standardi primjene
-- evidencija i sljedivost
-- povezivanje s drugim dokumentima
+## 2. TEMELJNE ODREDBE
 
-## 4. PROVEDBA
-Provedba se uređuje povezanim aktima, procedurama, registrima i odobrenim operativnim dokumentima.
+- nositelj odluke
+- odgovorni izvršitelj
+- konzultirane cjeline
+- informirane cjeline
+- nadzorna funkcija
+- revizijska funkcija
 
-## 5. NADZOR I REVIZIJA
-Dokument podliježe kontroli verzije, periodičnoj reviziji i usklađivanju.
+## 3. OPERATIVNI MODEL
 
-## 6. POVEZANI DOKUMENTI
-Povezani dokumenti evidentiraju se kroz IMPERIOR Master Registry.
+**ZADATAK → NOSITELJ → IZVRŠITELJ → KONTROLA → IZVJEŠTAJ**
+
+## 4. ODGOVORNOST I KONTROLA
+
+Za svaku značajnu aktivnost moraju biti utvrđeni odgovorna cjelina, rok, status, način izvještavanja i kontrolna točka.
+
+Dokumentacija mora omogućiti sljedivost odluke, provedbe, rezultata i naknadne revizije.
+
+
+## 5. STATUS DOKUMENTA
+
+**ACTIVE — sastavni dio dokumentacijske strukture IMPERIOR v1.0.**

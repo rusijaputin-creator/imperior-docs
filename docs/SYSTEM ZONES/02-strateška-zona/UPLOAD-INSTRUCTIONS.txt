@@ -1,0 +1,8 @@
+IMPERIOR — ZONA 02 CONTINUE
+Sadrži samo preostale datoteke od cjeline 02.3 do 02.8.
+Zone 00 i 01 te ručno obrađene cjeline 02.1 i 02.2 nisu uključene.
+
+GitHub odredište:
+docs/SYSTEM ZONES/02-strateska-zona/
+
+Upload svih .md datoteka iz ovog paketa, zatim provjeriti promjene prije Commit changes.

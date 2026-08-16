@@ -1,27 +1,28 @@
-# STRATEŠKI KRIZNI OKVIR
+# STANDARD KPI IZVJEŠTAVANJA
 
-Kod: IMP-02-07-01  
+Kod: IMP-02-05-03  
 Status: ACTIVE  
 Verzija: 1.0  
 Zona: 02 — STRATEŠKA ZONA  
-Cjelina: 02.7 — KRIZNO UPRAVLJANJE
+Cjelina: 02.5 — KPI I MJERENJE REZULTATA
 
 ## 1. SVRHA
 
-Dokument uspostavlja strateški okvir za koordinirani odgovor na događaje koji ozbiljno ugrožavaju ciljeve ili kontinuitet sustava.
+Dokument definira format i minimalni sadržaj izvještaja o ključnim pokazateljima uspješnosti.
 
 ## 2. TEMELJNE ODREDBE
 
-- jasni kriteriji aktivacije
-- krizna koordinacija
-- zaštita ključnih funkcija
-- dokumentiranje odluka
-- komunikacija
-- naknadna evaluacija
+- naziv KPI-ja
+- cilj
+- trenutna vrijednost
+- trend
+- odstupanje
+- odgovorna cjelina
+- korektivna mjera
 
 ## 3. OPERATIVNI MODEL
 
-**DETEKCIJA → AKTIVACIJA → PROCJENA → ODGOVOR → STABILIZACIJA → OPORAVAK → REVIZIJA**
+**KPI → STATUS → TREND → ODSTUPANJE → MJERA → NOVO MJERENJE**
 
 ## 4. ODGOVORNOST I KONTROLA
 

@@ -1,6 +1,6 @@
-# STRATEŠKI KRIZNI OKVIR
+# PLAN KONTINUITETA SUSTAVA
 
-Kod: IMP-02-07-01  
+Kod: IMP-02-07-03  
 Status: ACTIVE  
 Verzija: 1.0  
 Zona: 02 — STRATEŠKA ZONA  
@@ -8,20 +8,20 @@ Cjelina: 02.7 — KRIZNO UPRAVLJANJE
 
 ## 1. SVRHA
 
-Dokument uspostavlja strateški okvir za koordinirani odgovor na događaje koji ozbiljno ugrožavaju ciljeve ili kontinuitet sustava.
+Dokument definira minimalne uvjete za nastavak ključnih funkcija sustava tijekom ozbiljnog poremećaja.
 
 ## 2. TEMELJNE ODREDBE
 
-- jasni kriteriji aktivacije
-- krizna koordinacija
-- zaštita ključnih funkcija
-- dokumentiranje odluka
-- komunikacija
-- naknadna evaluacija
+- kritične funkcije
+- minimalni resursi
+- zamjenske odgovornosti
+- sigurnosne kopije
+- alternativni komunikacijski kanali
+- prioriteti oporavka
 
 ## 3. OPERATIVNI MODEL
 
-**DETEKCIJA → AKTIVACIJA → PROCJENA → ODGOVOR → STABILIZACIJA → OPORAVAK → REVIZIJA**
+**POREMEĆAJ → ODRŽAVANJE KRITIČNIH FUNKCIJA → OPORAVAK → POVRATAK → REVIZIJA**
 
 ## 4. ODGOVORNOST I KONTROLA
 

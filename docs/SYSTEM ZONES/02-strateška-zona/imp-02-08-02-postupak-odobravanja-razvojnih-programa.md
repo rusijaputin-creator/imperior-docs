@@ -1,27 +1,27 @@
-# STRATEŠKI KRIZNI OKVIR
+# POSTUPAK ODOBRAVANJA RAZVOJNIH PROGRAMA
 
-Kod: IMP-02-07-01  
+Kod: IMP-02-08-02  
 Status: ACTIVE  
 Verzija: 1.0  
 Zona: 02 — STRATEŠKA ZONA  
-Cjelina: 02.7 — KRIZNO UPRAVLJANJE
+Cjelina: 02.8 — RAZVOJNI PROGRAMI
 
 ## 1. SVRHA
 
-Dokument uspostavlja strateški okvir za koordinirani odgovor na događaje koji ozbiljno ugrožavaju ciljeve ili kontinuitet sustava.
+Dokument definira postupak kojim razvojni prijedlog prelazi iz koncepta u odobreni program.
 
 ## 2. TEMELJNE ODREDBE
 
-- jasni kriteriji aktivacije
-- krizna koordinacija
-- zaštita ključnih funkcija
-- dokumentiranje odluka
-- komunikacija
-- naknadna evaluacija
+- opis potrebe
+- analiza koristi i troškova
+- procjena resursa
+- procjena rizika
+- pravna i organizacijska provjera
+- odobrenje odgovorne razine
 
 ## 3. OPERATIVNI MODEL
 
-**DETEKCIJA → AKTIVACIJA → PROCJENA → ODGOVOR → STABILIZACIJA → OPORAVAK → REVIZIJA**
+**PRIJEDLOG → ANALIZA → PROVJERA → ODLUKA → REGISTRACIJA → POKRETANJE**
 
 ## 4. ODGOVORNOST I KONTROLA
 

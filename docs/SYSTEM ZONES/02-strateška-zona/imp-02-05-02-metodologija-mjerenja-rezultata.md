@@ -1,29 +1,35 @@
 # METODOLOGIJA MJERENJA REZULTATA
 
-**Kod:** IMP-02-05-02  
-**Status:** DRAFT  
-**Verzija:** 1.0  
-**Zona:** 02  
-**Cjelina:** 02.5 KPI i mjerenje rezultata
+Kod: IMP-02-05-02  
+Status: ACTIVE  
+Verzija: 1.0  
+Zona: 02 — STRATEŠKA ZONA  
+Cjelina: 02.5 — KPI I MJERENJE REZULTATA
 
 ## 1. SVRHA
-Dokument definira područje „Metodologija mjerenja rezultata” unutar odgovarajuće zone sustava IMPERIOR.
 
-## 2. PODRUČJE PRIMJENE
-Primjenjuje se na povezane organizacijske, upravljačke, pravne i dokumentacijske procese.
+Dokument definira način mjerenja, uspoređivanja i tumačenja rezultata strateških programa.
 
-## 3. TEMELJNE ODREDBE
-- svrha i opseg
-- odgovornosti i nadležnosti
-- standardi primjene
-- evidencija i sljedivost
-- povezivanje s drugim dokumentima
+## 2. TEMELJNE ODREDBE
 
-## 4. PROVEDBA
-Provedba se uređuje povezanim aktima, procedurama, registrima i odobrenim operativnim dokumentima.
+- mjerljive definicije
+- standardizirano razdoblje mjerenja
+- kontrola kvalitete podataka
+- usporedba s ciljem
+- tumačenje odstupanja
+- periodična revizija
 
-## 5. NADZOR I REVIZIJA
-Dokument podliježe kontroli verzije, periodičnoj reviziji i usklađivanju.
+## 3. OPERATIVNI MODEL
 
-## 6. POVEZANI DOKUMENTI
-Povezani dokumenti evidentiraju se kroz IMPERIOR Master Registry.
+**PLANIRANO → IZMJERENO → USPOREDBA → ANALIZA → ODLUKA**
+
+## 4. ODGOVORNOST I KONTROLA
+
+Za svaku značajnu aktivnost moraju biti utvrđeni odgovorna cjelina, rok, status, način izvještavanja i kontrolna točka.
+
+Dokumentacija mora omogućiti sljedivost odluke, provedbe, rezultata i naknadne revizije.
+
+
+## 5. STATUS DOKUMENTA
+
+**ACTIVE — sastavni dio dokumentacijske strukture IMPERIOR v1.0.**

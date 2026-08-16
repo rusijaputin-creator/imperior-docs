@@ -1,27 +1,27 @@
-# STRATEŠKI KRIZNI OKVIR
+# PROTOKOL ODGOVORA NA RIZIK
 
-Kod: IMP-02-07-01  
+Kod: IMP-02-06-03  
 Status: ACTIVE  
 Verzija: 1.0  
 Zona: 02 — STRATEŠKA ZONA  
-Cjelina: 02.7 — KRIZNO UPRAVLJANJE
+Cjelina: 02.6 — UPRAVLJANJE RIZICIMA
 
 ## 1. SVRHA
 
-Dokument uspostavlja strateški okvir za koordinirani odgovor na događaje koji ozbiljno ugrožavaju ciljeve ili kontinuitet sustava.
+Dokument definira postupak odabira, odobravanja, provedbe i praćenja mjera odgovora na rizik.
 
 ## 2. TEMELJNE ODREDBE
 
-- jasni kriteriji aktivacije
-- krizna koordinacija
-- zaštita ključnih funkcija
-- dokumentiranje odluka
-- komunikacija
-- naknadna evaluacija
+- izbjegavanje
+- smanjenje
+- prijenos gdje je primjenjivo
+- prihvaćanje uz obrazloženje
+- kontingencijski plan
+- eskalacija visokog rizika
 
 ## 3. OPERATIVNI MODEL
 
-**DETEKCIJA → AKTIVACIJA → PROCJENA → ODGOVOR → STABILIZACIJA → OPORAVAK → REVIZIJA**
+**RIZIK → ODGOVOR → ODGOVORNOST → MJERA → PRAĆENJE → REVIZIJA**
 
 ## 4. ODGOVORNOST I KONTROLA
 
