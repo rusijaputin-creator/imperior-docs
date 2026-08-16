@@ -7,24 +7,38 @@ Verzija: 1.0
 
 ## SVRHA
 
-Ovaj dokument definira područje **Mentalno zdravlje** unutar zone **05 — ZDRAVSTVENA ZONA** i njegovo mjesto u cjelovitom sustavu IMPERIOR.
-
-## PODRUČJE PRIMJENE
-
-Dokument utvrđuje osnovni okvir, odgovornosti, povezanost s drugim dijelovima sustava te načela upravljanja, provedbe, nadzora i razvoja.
+Ovaj dokument definira područje **Mentalno Zdravlje** unutar Zone 05 i njegovo mjesto u zdravstvenoj arhitekturi IMPERIOR-a.
 
 ## TEMELJNA NAČELA
 
-- jasno definirane odgovornosti i ovlasti
-- dokumentiran i sljediv način rada
-- međusobna povezanost zona i sustava
-- kontrola kvalitete i periodična revizija
-- kontinuirani razvoj i usklađivanje sustava
+- zaštita života, zdravlja, prava i dostojanstva pacijenta
+- dostupnost i kontinuitet zdravstvene skrbi
+- stručnost, sigurnost i kvaliteta
+- informirani pristanak i zaštita privatnosti
+- prevencija i rana intervencija
+- interdisciplinarna koordinacija
+- mjerenje ishoda i periodična revizija
+- usklađenost s važećim stručnim i pravnim standardima
 
-## POVEZANOST S IMPERIOR SUSTAVOM
+## DOKUMENTACIJA
 
-Područje se provodi u koordinaciji s ostalim zonama, glavnim registrima, sigurnosnim pravilima i sustavom nadzora kvalitete IMPERIOR-a.
+### IMP-05-06-01
+**[Temeljni okvir mentalnog zdravlja](imp-05-06-01-temeljni-okvir-mentalnog-zdravlja.md)**
+
+### IMP-05-06-02
+**[Standard skrbi za mentalno zdravlje](imp-05-06-02-standard-skrbi-za-mentalno-zdravlje.md)**
+
+### IMP-05-06-03
+**[Program prevencije i podrške](imp-05-06-03-program-prevencije-i-podrske.md)**
+
+## OPERATIVNI MODEL
+
+**PREVENCIJA → RANO PREPOZNAVANJE → PODRŠKA → STRUČNA SKRB → PRAĆENJE → OPORAVAK**
+
+## NAVIGACIJA
+
+**[← Povratak na Zonu 05](index.md)**
 
 ## STATUS DOKUMENTA
 
-ACTIVE — sastavni dio dokumentacijske strukture IMPERIOR v1.0.
+**ACTIVE — sastavni dio dokumentacijske strukture IMPERIOR v1.0.**

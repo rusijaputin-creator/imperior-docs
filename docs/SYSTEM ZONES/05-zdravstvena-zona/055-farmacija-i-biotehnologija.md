@@ -7,24 +7,38 @@ Verzija: 1.0
 
 ## SVRHA
 
-Ovaj dokument definira područje **Farmacija i biotehnologija** unutar zone **05 — ZDRAVSTVENA ZONA** i njegovo mjesto u cjelovitom sustavu IMPERIOR.
-
-## PODRUČJE PRIMJENE
-
-Dokument utvrđuje osnovni okvir, odgovornosti, povezanost s drugim dijelovima sustava te načela upravljanja, provedbe, nadzora i razvoja.
+Ovaj dokument definira područje **Farmacija I Biotehnologija** unutar Zone 05 i njegovo mjesto u zdravstvenoj arhitekturi IMPERIOR-a.
 
 ## TEMELJNA NAČELA
 
-- jasno definirane odgovornosti i ovlasti
-- dokumentiran i sljediv način rada
-- međusobna povezanost zona i sustava
-- kontrola kvalitete i periodična revizija
-- kontinuirani razvoj i usklađivanje sustava
+- zaštita života, zdravlja, prava i dostojanstva pacijenta
+- dostupnost i kontinuitet zdravstvene skrbi
+- stručnost, sigurnost i kvaliteta
+- informirani pristanak i zaštita privatnosti
+- prevencija i rana intervencija
+- interdisciplinarna koordinacija
+- mjerenje ishoda i periodična revizija
+- usklađenost s važećim stručnim i pravnim standardima
 
-## POVEZANOST S IMPERIOR SUSTAVOM
+## DOKUMENTACIJA
 
-Područje se provodi u koordinaciji s ostalim zonama, glavnim registrima, sigurnosnim pravilima i sustavom nadzora kvalitete IMPERIOR-a.
+### IMP-05-05-01
+**[Okvir farmaceutskog sustava](imp-05-05-01-okvir-farmaceutskog-sustava.md)**
+
+### IMP-05-05-02
+**[Standard sigurnosti lijekova](imp-05-05-02-standard-sigurnosti-lijekova.md)**
+
+### IMP-05-05-03
+**[Okvir biotehnološkog razvoja](imp-05-05-03-okvir-biotehnoloskog-razvoja.md)**
+
+## OPERATIVNI MODEL
+
+**RAZVOJ → PROCJENA → ODOBRENJE → SIGURNA PRIMJENA → PRAĆENJE → REVIZIJA**
+
+## NAVIGACIJA
+
+**[← Povratak na Zonu 05](index.md)**
 
 ## STATUS DOKUMENTA
 
-ACTIVE — sastavni dio dokumentacijske strukture IMPERIOR v1.0.
+**ACTIVE — sastavni dio dokumentacijske strukture IMPERIOR v1.0.**

@@ -7,24 +7,38 @@ Verzija: 1.0
 
 ## SVRHA
 
-Ovaj dokument definira područje **Upravljanje zdravstvenim sustavom** unutar zone **05 — ZDRAVSTVENA ZONA** i njegovo mjesto u cjelovitom sustavu IMPERIOR.
-
-## PODRUČJE PRIMJENE
-
-Dokument utvrđuje osnovni okvir, odgovornosti, povezanost s drugim dijelovima sustava te načela upravljanja, provedbe, nadzora i razvoja.
+Ovaj dokument definira područje **Upravljanje Zdravstvenim Sustavom** unutar Zone 05 i njegovo mjesto u zdravstvenoj arhitekturi IMPERIOR-a.
 
 ## TEMELJNA NAČELA
 
-- jasno definirane odgovornosti i ovlasti
-- dokumentiran i sljediv način rada
-- međusobna povezanost zona i sustava
-- kontrola kvalitete i periodična revizija
-- kontinuirani razvoj i usklađivanje sustava
+- zaštita života, zdravlja, prava i dostojanstva pacijenta
+- dostupnost i kontinuitet zdravstvene skrbi
+- stručnost, sigurnost i kvaliteta
+- informirani pristanak i zaštita privatnosti
+- prevencija i rana intervencija
+- interdisciplinarna koordinacija
+- mjerenje ishoda i periodična revizija
+- usklađenost s važećim stručnim i pravnim standardima
 
-## POVEZANOST S IMPERIOR SUSTAVOM
+## DOKUMENTACIJA
 
-Područje se provodi u koordinaciji s ostalim zonama, glavnim registrima, sigurnosnim pravilima i sustavom nadzora kvalitete IMPERIOR-a.
+### IMP-05-01-01
+**[Temeljni akt zdravstvenog sustava](imp-05-01-01-temeljni-akt-zdravstvenog-sustava.md)**
+
+### IMP-05-01-02
+**[Organizacija zdravstvenog upravljanja](imp-05-01-02-organizacija-zdravstvenog-upravljanja.md)**
+
+### IMP-05-01-03
+**[Standard upravljanja kvalitetom zdravstva](imp-05-01-03-standard-upravljanja-kvalitetom-zdravstva.md)**
+
+## OPERATIVNI MODEL
+
+**POLITIKA → PLANIRANJE → ORGANIZACIJA → PROVEDBA → KVALITETA → NADZOR → REVIZIJA**
+
+## NAVIGACIJA
+
+**[← Povratak na Zonu 05](index.md)**
 
 ## STATUS DOKUMENTA
 
-ACTIVE — sastavni dio dokumentacijske strukture IMPERIOR v1.0.
+**ACTIVE — sastavni dio dokumentacijske strukture IMPERIOR v1.0.**

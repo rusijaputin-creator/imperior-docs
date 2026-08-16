@@ -7,24 +7,38 @@ Verzija: 1.0
 
 ## SVRHA
 
-Ovaj dokument definira područje **Opća bolnica** unutar zone **05 — ZDRAVSTVENA ZONA** i njegovo mjesto u cjelovitom sustavu IMPERIOR.
-
-## PODRUČJE PRIMJENE
-
-Dokument utvrđuje osnovni okvir, odgovornosti, povezanost s drugim dijelovima sustava te načela upravljanja, provedbe, nadzora i razvoja.
+Ovaj dokument definira područje **Opća Bolnica** unutar Zone 05 i njegovo mjesto u zdravstvenoj arhitekturi IMPERIOR-a.
 
 ## TEMELJNA NAČELA
 
-- jasno definirane odgovornosti i ovlasti
-- dokumentiran i sljediv način rada
-- međusobna povezanost zona i sustava
-- kontrola kvalitete i periodična revizija
-- kontinuirani razvoj i usklađivanje sustava
+- zaštita života, zdravlja, prava i dostojanstva pacijenta
+- dostupnost i kontinuitet zdravstvene skrbi
+- stručnost, sigurnost i kvaliteta
+- informirani pristanak i zaštita privatnosti
+- prevencija i rana intervencija
+- interdisciplinarna koordinacija
+- mjerenje ishoda i periodična revizija
+- usklađenost s važećim stručnim i pravnim standardima
 
-## POVEZANOST S IMPERIOR SUSTAVOM
+## DOKUMENTACIJA
 
-Područje se provodi u koordinaciji s ostalim zonama, glavnim registrima, sigurnosnim pravilima i sustavom nadzora kvalitete IMPERIOR-a.
+### IMP-05-03-01
+**[Organizacijski model opće bolnice](imp-05-03-01-organizacijski-model-opce-bolnice.md)**
+
+### IMP-05-03-02
+**[Standard bolničke skrbi](imp-05-03-02-standard-bolnicke-skrbi.md)**
+
+### IMP-05-03-03
+**[Protokol sigurnosti pacijenata](imp-05-03-03-protokol-sigurnosti-pacijenata.md)**
+
+## OPERATIVNI MODEL
+
+**PRIJEM → PROCJENA → SKRB → PRAĆENJE → OTPUST → KONTINUITET SKRBI**
+
+## NAVIGACIJA
+
+**[← Povratak na Zonu 05](index.md)**
 
 ## STATUS DOKUMENTA
 
-ACTIVE — sastavni dio dokumentacijske strukture IMPERIOR v1.0.
+**ACTIVE — sastavni dio dokumentacijske strukture IMPERIOR v1.0.**
