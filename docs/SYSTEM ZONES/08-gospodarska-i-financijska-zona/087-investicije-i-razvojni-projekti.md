@@ -7,17 +7,38 @@ Verzija: 1.0
 
 ## SVRHA
 
-Definira procjenu, odabir, praćenje i upravljanje investicijama i razvojnim projektima.
+Ovaj dokument definira područje **Investicije I Razvojni Projekti** unutar Zone 08 i njegovo mjesto u gospodarskoj i financijskoj arhitekturi IMPERIOR-a.
 
-## TEMELJNA PODRUČJA
+## TEMELJNA NAČELA
 
-- upravljanje i odgovornosti
-- planiranje i razvoj
-- standardi i dokumentacija
-- financijska i operativna kontrola
-- povezivanje s drugim zonama
-- nadzor, revizija i kontinuirano poboljšavanje
+- zakonitost, transparentnost i odgovornost
+- održiv gospodarski razvoj
+- poticanje poduzetništva, inovacija i produktivnosti
+- zaštita korisnika i tržišnog integriteta
+- razborito financijsko upravljanje
+- jasni kriteriji ulaganja i financiranja
+- razvoj rada, zapošljavanja i kompetencija
+- mjerenje rezultata, nadzor i periodična revizija
 
-## STATUS
+## DOKUMENTACIJA
 
-Modul je sastavni dio gospodarske i financijske arhitekture IMPERIOR-a.
+### IMP-08-07-01
+**[Okvir investicijskog upravljanja](imp-08-07-01-okvir-investicijskog-upravljanja.md)**
+
+### IMP-08-07-02
+**[Postupak procjene razvojnih projekata](imp-08-07-02-postupak-procjene-razvojnih-projekata.md)**
+
+### IMP-08-07-03
+**[Registar investicija i projekata](imp-08-07-03-registar-investicija-i-projekata.md)**
+
+## OPERATIVNI MODEL
+
+**PRIJEDLOG → PROCJENA → PRIORITET → ODLUKA → PROVEDBA → PRAĆENJE → EVALUACIJA**
+
+## NAVIGACIJA
+
+**[← Povratak na Zonu 08](index.md)**
+
+## STATUS DOKUMENTA
+
+**ACTIVE — sastavni dio dokumentacijske strukture IMPERIOR v1.0.**

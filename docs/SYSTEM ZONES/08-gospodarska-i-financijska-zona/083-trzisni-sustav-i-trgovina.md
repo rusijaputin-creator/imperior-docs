@@ -7,17 +7,38 @@ Verzija: 1.0
 
 ## SVRHA
 
-Definira organizaciju tržišta, trgovine, razmjene dobara i usluga te temeljne tržišne standarde.
+Ovaj dokument definira područje **Tržišni Sustav I Trgovina** unutar Zone 08 i njegovo mjesto u gospodarskoj i financijskoj arhitekturi IMPERIOR-a.
 
-## TEMELJNA PODRUČJA
+## TEMELJNA NAČELA
 
-- upravljanje i odgovornosti
-- planiranje i razvoj
-- standardi i dokumentacija
-- financijska i operativna kontrola
-- povezivanje s drugim zonama
-- nadzor, revizija i kontinuirano poboljšavanje
+- zakonitost, transparentnost i odgovornost
+- održiv gospodarski razvoj
+- poticanje poduzetništva, inovacija i produktivnosti
+- zaštita korisnika i tržišnog integriteta
+- razborito financijsko upravljanje
+- jasni kriteriji ulaganja i financiranja
+- razvoj rada, zapošljavanja i kompetencija
+- mjerenje rezultata, nadzor i periodična revizija
 
-## STATUS
+## DOKUMENTACIJA
 
-Modul je sastavni dio gospodarske i financijske arhitekture IMPERIOR-a.
+### IMP-08-03-01
+**[Okvir tržišnog sustava](imp-08-03-01-okvir-trzisnog-sustava.md)**
+
+### IMP-08-03-02
+**[Standard trgovinskih procesa](imp-08-03-02-standard-trgovinskih-procesa.md)**
+
+### IMP-08-03-03
+**[Nadzor tržišta i zaštita korisnika](imp-08-03-03-nadzor-trzista-i-zastita-korisnika.md)**
+
+## OPERATIVNI MODEL
+
+**PRAVILA → TRŽIŠTE → TRANSAKCIJE → NADZOR → ZAŠTITA KORISNIKA → REVIZIJA**
+
+## NAVIGACIJA
+
+**[← Povratak na Zonu 08](index.md)**
+
+## STATUS DOKUMENTA
+
+**ACTIVE — sastavni dio dokumentacijske strukture IMPERIOR v1.0.**

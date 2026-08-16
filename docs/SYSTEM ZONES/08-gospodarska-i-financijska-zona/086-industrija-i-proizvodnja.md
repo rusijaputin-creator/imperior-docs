@@ -7,17 +7,38 @@ Verzija: 1.0
 
 ## SVRHA
 
-Definira razvoj industrijskih i proizvodnih kapaciteta, standarde proizvodnje i upravljanje resursima.
+Ovaj dokument definira područje **Industrija I Proizvodnja** unutar Zone 08 i njegovo mjesto u gospodarskoj i financijskoj arhitekturi IMPERIOR-a.
 
-## TEMELJNA PODRUČJA
+## TEMELJNA NAČELA
 
-- upravljanje i odgovornosti
-- planiranje i razvoj
-- standardi i dokumentacija
-- financijska i operativna kontrola
-- povezivanje s drugim zonama
-- nadzor, revizija i kontinuirano poboljšavanje
+- zakonitost, transparentnost i odgovornost
+- održiv gospodarski razvoj
+- poticanje poduzetništva, inovacija i produktivnosti
+- zaštita korisnika i tržišnog integriteta
+- razborito financijsko upravljanje
+- jasni kriteriji ulaganja i financiranja
+- razvoj rada, zapošljavanja i kompetencija
+- mjerenje rezultata, nadzor i periodična revizija
 
-## STATUS
+## DOKUMENTACIJA
 
-Modul je sastavni dio gospodarske i financijske arhitekture IMPERIOR-a.
+### IMP-08-06-01
+**[Strategija industrijskog razvoja](imp-08-06-01-strategija-industrijskog-razvoja.md)**
+
+### IMP-08-06-02
+**[Standard proizvodnih sustava](imp-08-06-02-standard-proizvodnih-sustava.md)**
+
+### IMP-08-06-03
+**[Program razvoja proizvodnih kapaciteta](imp-08-06-03-program-razvoja-proizvodnih-kapaciteta.md)**
+
+## OPERATIVNI MODEL
+
+**STRATEGIJA → KAPACITET → PROIZVODNJA → KVALITETA → UČINKOVITOST → RAZVOJ**
+
+## NAVIGACIJA
+
+**[← Povratak na Zonu 08](index.md)**
+
+## STATUS DOKUMENTA
+
+**ACTIVE — sastavni dio dokumentacijske strukture IMPERIOR v1.0.**

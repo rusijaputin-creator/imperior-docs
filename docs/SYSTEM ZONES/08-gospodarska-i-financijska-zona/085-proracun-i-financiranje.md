@@ -7,17 +7,38 @@ Verzija: 1.0
 
 ## SVRHA
 
-Definira planiranje proračuna, izvore financiranja, raspodjelu sredstava i praćenje izvršenja.
+Ovaj dokument definira područje **Proračun I Financiranje** unutar Zone 08 i njegovo mjesto u gospodarskoj i financijskoj arhitekturi IMPERIOR-a.
 
-## TEMELJNA PODRUČJA
+## TEMELJNA NAČELA
 
-- upravljanje i odgovornosti
-- planiranje i razvoj
-- standardi i dokumentacija
-- financijska i operativna kontrola
-- povezivanje s drugim zonama
-- nadzor, revizija i kontinuirano poboljšavanje
+- zakonitost, transparentnost i odgovornost
+- održiv gospodarski razvoj
+- poticanje poduzetništva, inovacija i produktivnosti
+- zaštita korisnika i tržišnog integriteta
+- razborito financijsko upravljanje
+- jasni kriteriji ulaganja i financiranja
+- razvoj rada, zapošljavanja i kompetencija
+- mjerenje rezultata, nadzor i periodična revizija
 
-## STATUS
+## DOKUMENTACIJA
 
-Modul je sastavni dio gospodarske i financijske arhitekture IMPERIOR-a.
+### IMP-08-05-01
+**[Proračunski okvir](imp-08-05-01-proracunski-okvir.md)**
+
+### IMP-08-05-02
+**[Postupak planiranja i odobravanja proračuna](imp-08-05-02-postupak-planiranja-i-odobravanja-proracuna.md)**
+
+### IMP-08-05-03
+**[Standard financiranja programa](imp-08-05-03-standard-financiranja-programa.md)**
+
+## OPERATIVNI MODEL
+
+**PRIORITETI → PRORAČUN → ODOBRENJE → FINANCIRANJE → PRAĆENJE → IZVJEŠTAVANJE**
+
+## NAVIGACIJA
+
+**[← Povratak na Zonu 08](index.md)**
+
+## STATUS DOKUMENTA
+
+**ACTIVE — sastavni dio dokumentacijske strukture IMPERIOR v1.0.**
