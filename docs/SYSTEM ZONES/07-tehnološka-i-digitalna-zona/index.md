@@ -1,25 +1,31 @@
 # 07 — TEHNOLOŠKA I DIGITALNA ZONA
 
-IMPERIOR — Tehnološki i digitalni sustav
+IMPERIOR — SYSTEM ZONES
 
-Oznaka zone: 07  
-Razina: Tehnološka sistemska zona  
 Status: ACTIVE  
 Verzija: 1.0
 
-## SVRHA
+## STRUKTURA ZONE
 
-Zona 07 predstavlja tehnološku i digitalnu infrastrukturu projekta IMPERIOR.
+- **[07.1 — UPRAVLJANJE TEHNOLOŠKIM SUSTAVOM](071-upravljanje-tehnoloskim-sustavom.md)**
+- **[07.2 — DIGITALNA INFRASTRUKTURA](072-digitalna-infrastruktura.md)**
+- **[07.3 — UMJETNA INTELIGENCIJA I AUTOMATIZACIJA](073-umjetna-inteligencija-i-automatizacija.md)**
+- **[07.4 — PODACI I INFORMACIJSKI SUSTAVI](074-podaci-i-informacijski-sustavi.md)**
+- **[07.5 — KIBERNETIČKA SIGURNOST](075-kiberneticka-sigurnost.md)**
+- **[07.6 — DIGITALNI IDENTITET I AUTENTIKACIJA](076-digitalni-identitet-i-autentikacija.md)**
+- **[07.7 — INTEROPERABILNOST I INTEGRACIJE](077-interoperabilnost-i-integracije.md)**
+- **[07.8 — ISTRAŽIVANJE, RAZVOJ I INOVACIJE](078-istrazivanje-razvoj-i-inovacije.md)**
+- **[07.9 — TEHNOLOŠKI STANDARDI I KVALITETA](079-tehnoloski-standardi-i-kvaliteta.md)**
+- **[07.10 — KONTINUITET, OTPORNOST I RAZVOJ](0710-kontinuitet-otpornost-i-razvoj.md)**
 
-## MODULI
+## HIJERARHIJA
 
-- 07.1 — Upravljanje tehnološkim sustavom
-- 07.2 — Digitalna infrastruktura
-- 07.3 — Umjetna inteligencija i automatizacija
-- 07.4 — Podaci i informacijski sustavi
-- 07.5 — Kibernetička sigurnost
-- 07.6 — Digitalni identitet i autentikacija
-- 07.7 — Interoperabilnost i integracije
-- 07.8 — Istraživanje, razvoj i inovacije
-- 07.9 — Tehnološki standardi i kvaliteta
-- 07.10 — Kontinuitet, otpornost i razvoj
+**ZONA 07 → ORGANIZACIJSKA CJELINA → IMP DOKUMENT → PROVEDBA → KVALITETA → NADZOR → REVIZIJA**
+
+## TEMELJNI PRINCIP
+
+**SIGURNOST → INTEROPERABILNOST → ODGOVORNA AUTOMATIZACIJA → OTPORNOST → RAZVOJ**
+
+## STATUS ZONE
+
+**ACTIVE — IMPERIOR v1.0**
