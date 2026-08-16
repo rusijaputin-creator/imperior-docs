@@ -1,29 +1,50 @@
-# REGISTAR USLUŽNIH SADRŽAJA
+# Protokol kriznog odgovora i kontinuiteta kampusa
 
-**Kod:** IMP-14-06-03
-**Status:** DRAFT
-**Verzija:** 1.0
-**Zona:** 14
-**Cjelina:** 14.6 Javne i komercijalne usluge
+**Kod:** `IMP-14-06-03`  
+**Zona:** 14 — IMPERIOR kampus  
+**Modul:** 14.6 Sigurnost kampusa  
+**Status:** ODOBRENO  
+**Vrsta dokumenta:** Sustavni dokument
 
-## 1. SVRHA
-Dokument definira područje „Registar uslužnih sadržaja” unutar Zone 14 sustava IMPERIOR.
+## 1. Svrha
 
-## 2. PODRUČJE PRIMJENE
-Primjenjuje se na povezane organizacijske, stručne, upravljačke i dokumentacijske procese.
+Definira postupke odgovora na krizne događaje, koordinaciju službi, zaštitu ljudi i nastavak ključnih funkcija kampusa.
 
-## 3. TEMELJNE ODREDBE
-- svrha i opseg
-- odgovornosti i nadležnosti
-- standardi primjene
-- evidencija i sljedivost
-- povezivanje s drugim dokumentima
+## 2. Područje primjene
 
-## 4. PROVEDBA
-Provedba se uređuje povezanim aktima, procedurama, registrima i odobrenim operativnim dokumentima.
+Dokument se primjenjuje na sve organizacijske jedinice, objekte, programe i odgovorne osobe koje djeluju unutar područja modula **14.6 Sigurnost kampusa**.
 
-## 5. NADZOR I REVIZIJA
-Dokument podliježe kontroli verzije, periodičnoj reviziji i usklađivanju.
+## 3. Temeljna načela
 
-## 6. POVEZANI DOKUMENTI
-Povezani dokumenti evidentiraju se kroz IMPERIOR Master Registry.
+- jasno definirana odgovornost i nadležnost;
+- sigurnost, dostupnost i kontinuitet funkcija;
+- mjerljiva kvaliteta i redovita evaluacija;
+- održivost i racionalno korištenje resursa;
+- usklađenost s drugim zonama i modulima IMPERIOR sustava;
+- dokumentiranost odluka, promjena i rezultata.
+
+## 4. Upravljanje i provedba
+
+Za provedbu se uspostavljaju odgovorne organizacijske jedinice, operativni postupci, evidencije i kontrolne točke. Svaka značajna promjena mora biti evidentirana, procijenjena prema utjecaju na povezane sustave i uključena u redoviti ciklus revizije.
+
+## 5. Kontrola kvalitete
+
+Kontrola se provodi kroz periodične provjere, interne revizije, praćenje odstupanja i korektivne mjere. Rezultati kontrole moraju biti usporedivi kroz vrijeme i povezani s odgovornim nositeljima provedbe.
+
+## 6. Pokazatelji
+
+Minimalni skup pokazatelja uključuje:
+- dostupnost i funkcionalnost sustava;
+- razinu korištenja kapaciteta;
+- broj i vrstu evidentiranih odstupanja;
+- vrijeme odgovora na uočene probleme;
+- provedbu planiranih mjera;
+- trend kvalitete i korisničkog iskustva.
+
+## 7. Povezanost
+
+Dokument se tumači zajedno s organizacijskom strukturom Zone 14, pripadajućim modulskim dokumentima, `_order.yaml` datotekom i glavnim registrom dokumentacije IMPERIOR-a.
+
+## 8. Revizija
+
+Dokument se pregledava najmanje jednom u razvojnom ciklusu Zone 14 te odmah nakon većih organizacijskih, infrastrukturnih, sigurnosnih ili tehnoloških promjena.
