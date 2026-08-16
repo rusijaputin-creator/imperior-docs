@@ -1,29 +1,48 @@
-# IZVJEŠTAVANJE O GLOBALNOJ SURADNJI
+# IMP-13-10-03 — Sustav praćenja provedbe globalne strategije
 
-**Kod:** IMP-13-10-03
-**Status:** DRAFT
-**Verzija:** 1.0
-**Zona:** 13
-**Cjelina:** 13.10 Globalna koordinacija
+**Status:** ODOBRENO  
+**Zona:** 13 — Međunarodna zona  
+**Modul:** 13.10 Globalna strategija i dugoročni razvoj  
+**Način zamjene:** IN-PLACE REPLACEMENT / BACKWARD-COMPATIBLE
 
-## 1. SVRHA
-Dokument definira područje „Izvještavanje o globalnoj suradnji” unutar Zone 13 sustava IMPERIOR.
+> Ovaj dokument namjerno zadržava postojeći naziv datoteke radi izravnog prepisivanja
+> postojeće GitHub datoteke i očuvanja poveznica. Sadržaj i službeni naslov usklađeni su
+> s aktualnom hijerarhijom Zone 13.
 
-## 2. PODRUČJE PRIMJENE
-Primjenjuje se na povezane organizacijske, stručne, upravljačke i dokumentacijske procese.
+## 1. Svrha
 
-## 3. TEMELJNE ODREDBE
-- svrha i opseg
-- odgovornosti i nadležnosti
-- standardi primjene
-- evidencija i sljedivost
-- povezivanje s drugim dokumentima
+Ovim dokumentom utvrđuje se službeni okvir za područje **Sustav praćenja provedbe globalne strategije** unutar modula
+**13.10 Globalna strategija i dugoročni razvoj** Međunarodne zone projekta IMPERIOR.
 
-## 4. PROVEDBA
-Provedba se uređuje povezanim aktima, procedurama, registrima i odobrenim operativnim dokumentima.
+## 2. Temeljna načela
 
-## 5. NADZOR I REVIZIJA
-Dokument podliježe kontroli verzije, periodičnoj reviziji i usklađivanju.
+Primjenjuju se načela zakonitosti, transparentnosti, odgovornosti, međunarodne
+usklađenosti, provjerljivosti, dokumentiranog odlučivanja, kontinuiteta i zaštite
+institucionalnog integriteta.
 
-## 6. POVEZANI DOKUMENTI
-Povezani dokumenti evidentiraju se kroz IMPERIOR Master Registry.
+## 3. Područje primjene
+
+Dokument se primjenjuje na sve aktivnosti, programe, odnose, evidencije i odluke koje
+pripadaju modulu **13.10 Globalna strategija i dugoročni razvoj**, uključujući pripremu, provedbu, praćenje, evaluaciju i
+arhiviranje.
+
+## 4. Upravljanje i odgovornost
+
+Za svaki postupak mora biti moguće utvrditi odgovornu funkciju, nositelja odluke,
+temelj odluke, vremenski slijed, povezane dokumente i rezultat provedbe. Odluke koje
+utječu na druge zone moraju biti evidentirane kroz odgovarajuće međuzonske veze.
+
+## 5. Kontrola i evidencija
+
+Sve ključne aktivnosti moraju imati provjerljiv zapis. Registar mora omogućiti
+praćenje statusa, rokova, odgovornosti, rizika, odstupanja i korektivnih mjera.
+
+## 6. Usklađenost sa strukturom Zone 13
+
+Ovaj dokument pripada isključivo modulu **13.10 Globalna strategija i dugoročni razvoj**. Njegova službena oznaka ostaje
+**IMP-13-10-03**. Prethodni sadržaj iste datoteke smatra se zamijenjenim ovom verzijom.
+
+## 7. Završna odredba
+
+Ova verzija stupa na mjesto prethodne verzije dokumenta iste oznake i služi kao
+kanonska verzija za aktualnu strukturu Zone 13.
