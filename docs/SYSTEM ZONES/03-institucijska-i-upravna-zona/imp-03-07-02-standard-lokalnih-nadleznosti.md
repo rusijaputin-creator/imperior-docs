@@ -1,29 +1,47 @@
 # STANDARD LOKALNIH NADLEŽNOSTI
 
-**Kod:** IMP-03-07-02  
-**Status:** DRAFT  
-**Verzija:** 1.0  
-**Zona:** 03  
-**Cjelina:** 03.7 Lokalna uprava
+Kod: IMP-03-07-02  
+Status: ACTIVE  
+Verzija: 1.0  
+Zona: 03 — INSTITUCIJSKA I UPRAVNA ZONA  
+Cjelina: 03.7 — LOKALNA UPRAVA
 
 ## 1. SVRHA
-Dokument definira područje „Standard lokalnih nadležnosti” unutar odgovarajuće zone sustava IMPERIOR.
 
-## 2. PODRUČJE PRIMJENE
-Primjenjuje se na povezane organizacijske, upravljačke, pravne i dokumentacijske procese.
+Utvrđuje pravila raspodjele, evidentiranja i kontrole lokalnih nadležnosti.
 
-## 3. TEMELJNE ODREDBE
-- svrha i opseg
-- odgovornosti i nadležnosti
-- standardi primjene
-- evidencija i sljedivost
-- povezivanje s drugim dokumentima
+## 2. TEMELJNA PRAVILA
 
-## 4. PROVEDBA
-Provedba se uređuje povezanim aktima, procedurama, registrima i odobrenim operativnim dokumentima.
+- nadležnosti moraju biti jasno definirane
+- svaka ovlast mora imati odgovornu funkciju ili tijelo
+- važne odluke moraju biti dokumentirane i sljedive
+- postupci moraju biti usklađeni s višim aktima i primjenjivim pravom
+- sukobi nadležnosti rješavaju se kroz definiran koordinacijski postupak
+- sustav mora omogućiti nadzor, reviziju i korektivne mjere
 
-## 5. NADZOR I REVIZIJA
-Dokument podliježe kontroli verzije, periodičnoj reviziji i usklađivanju.
+## 3. ORGANIZACIJA I PROVEDBA
 
-## 6. POVEZANI DOKUMENTI
-Povezani dokumenti evidentiraju se kroz IMPERIOR Master Registry.
+Za svaku aktivnost moraju biti utvrđeni najmanje:
+
+1. svrha
+2. nadležna cjelina
+3. odgovorna funkcija
+4. postupak
+5. rok ili razvojna faza
+6. potrebna dokumentacija
+7. način izvještavanja
+8. način kontrole
+
+## 4. SLJEDIVOST
+
+Temeljni kontrolni lanac glasi:
+
+**MANDAT → OVLAST → ODLUKA → PROVEDBA → EVIDENCIJA → NADZOR → REVIZIJA**
+
+## 5. POVEZANOST
+
+Dokument se primjenjuje zajedno s ostalim dokumentima Zone 03, temeljnim aktima Zone 00, pravnim standardima Zone 01 i strateškim pravilima Zone 02.
+
+## 6. STATUS DOKUMENTA
+
+**ACTIVE — sastavni dio dokumentacijske strukture IMPERIOR v1.0.**

@@ -7,24 +7,36 @@ Verzija: 1.0
 
 ## SVRHA
 
-Ovaj dokument definira područje **Središnja uprava** unutar zone **03 — INSTITUCIJSKA I UPRAVNA ZONA** i njegovo mjesto u cjelovitom sustavu IMPERIOR.
-
-## PODRUČJE PRIMJENE
-
-Dokument utvrđuje osnovni okvir, odgovornosti, povezanost s drugim dijelovima sustava te načela upravljanja, provedbe, nadzora i razvoja.
+Ovaj dokument definira područje **Središnja Uprava** unutar Zone 03 i njegovo mjesto u institucionalnoj i upravnoj arhitekturi IMPERIOR-a.
 
 ## TEMELJNA NAČELA
 
-- jasno definirane odgovornosti i ovlasti
-- dokumentiran i sljediv način rada
-- međusobna povezanost zona i sustava
-- kontrola kvalitete i periodična revizija
-- kontinuirani razvoj i usklađivanje sustava
+- jasno definirane nadležnosti i odgovornosti
+- zakonit i dokumentiran način rada
+- sljedivost odluka i provedbe
+- razdvajanje upravljanja, provedbe i nadzora gdje je potrebno
+- koordinacija između institucionalnih razina
+- periodična revizija i razvoj sustava
 
-## POVEZANOST S IMPERIOR SUSTAVOM
+## DOKUMENTACIJA
 
-Područje se provodi u koordinaciji s ostalim zonama, glavnim registrima, sigurnosnim pravilima i sustavom nadzora kvalitete IMPERIOR-a.
+### IMP-03-01-01
+**[Temeljni akt središnje uprave](imp-03-01-01-temeljni-akt-sredisnje-uprave.md)**
+
+### IMP-03-01-02
+**[Organizacijska struktura središnje uprave](imp-03-01-02-organizacijska-struktura-sredisnje-uprave.md)**
+
+### IMP-03-01-03
+**[Poslovnik središnje uprave](imp-03-01-03-poslovnik-sredisnje-uprave.md)**
+
+## OPERATIVNI MODEL
+
+**MANDAT → ORGANIZACIJA → ODLUKA → PROVEDBA → NADZOR → REVIZIJA**
+
+## NAVIGACIJA
+
+**[← Povratak na Zonu 03](index.md)**
 
 ## STATUS DOKUMENTA
 
-ACTIVE — sastavni dio dokumentacijske strukture IMPERIOR v1.0.
+**ACTIVE — sastavni dio dokumentacijske strukture IMPERIOR v1.0.**
