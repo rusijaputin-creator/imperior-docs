@@ -1,21 +1,44 @@
----
-title: "06.7 — AKADEMIJE I RAZVOJ ZNANJA"
----
-
 # 06.7 — AKADEMIJE I RAZVOJ ZNANJA
 
-**Zona:** 06 — Obrazovna i znanstvena zona  
-**Status:** ACTIVE
+IMPERIOR — 06 OBRAZOVNA I ZNANSTVENA ZONA
+
+Status: ACTIVE  
+Verzija: 1.0
 
 ## SVRHA
 
-Specijalizirane akademije, centri izvrsnosti i kontinuirani razvoj znanja i kompetencija.
+Ovaj dokument definira područje **Akademije I Razvoj Znanja** unutar Zone 06 i njegovo mjesto u obrazovnoj i znanstvenoj arhitekturi IMPERIOR-a.
 
-## TEMELJNA PODRUČJA
+## TEMELJNA NAČELA
 
-- organizacija i upravljanje
-- standardi kvalitete
-- razvoj i dostupnost
-- digitalna podrška i podaci
-- evaluacija i kontinuirano poboljšavanje
-- povezivanje s ostalim zonama sustava IMPERIOR
+- dostupnost i jednakost obrazovnih prilika
+- kvaliteta, mjerljivi ishodi i kontinuirano poboljšanje
+- akademska sloboda uz odgovornost i integritet
+- zaštita prava, dobrobiti i privatnosti učenika i studenata
+- razvoj znanja, kompetencija i kritičkog mišljenja
+- znanstvena etika, transparentnost i provjerljivost
+- digitalna dostupnost i sigurnost
+- cjeloživotno učenje i međunarodna suradnja
+
+## DOKUMENTACIJA
+
+### IMP-06-07-01
+**[Okvir akademija IMPERIOR-a](imp-06-07-01-okvir-akademija-imperior-a.md)**
+
+### IMP-06-07-02
+**[Program razvoja stručnog znanja](imp-06-07-02-program-razvoja-strucnog-znanja.md)**
+
+### IMP-06-07-03
+**[Standard cjeloživotnog učenja](imp-06-07-03-standard-cjelozivotnog-ucenja.md)**
+
+## OPERATIVNI MODEL
+
+**ZNANJE → USAVRŠAVANJE → PRIMJENA → MENTORSTVO → CERTIFIKACIJA → CJELOŽIVOTNI RAZVOJ**
+
+## NAVIGACIJA
+
+**[← Povratak na Zonu 06](index.md)**
+
+## STATUS DOKUMENTA
+
+**ACTIVE — sastavni dio dokumentacijske strukture IMPERIOR v1.0.**

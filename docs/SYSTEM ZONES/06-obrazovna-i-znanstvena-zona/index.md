@@ -1,24 +1,31 @@
----
-title: "06 — OBRAZOVNA I ZNANSTVENA ZONA"
----
-
 # 06 — OBRAZOVNA I ZNANSTVENA ZONA
 
-Integrirani sustav obrazovanja, znanosti, istraživanja, razvoja znanja i ljudskih potencijala unutar projekta IMPERIOR.
+IMPERIOR — SYSTEM ZONES
 
-**Oznaka zone:** 06  
-**Razina:** Obrazovna i znanstvena sistemska zona  
-**Status:** ACTIVE
+Status: ACTIVE  
+Verzija: 1.0
 
-## Moduli
+## STRUKTURA ZONE
 
-- 06.1 — Upravljanje obrazovanjem i znanošću
-- 06.2 — Obrazovni sustav
-- 06.3 — Predškolsko i osnovno obrazovanje
-- 06.4 — Srednjoškolsko obrazovanje
-- 06.5 — Visoko obrazovanje
-- 06.6 — Znanost i istraživanje
-- 06.7 — Akademije i razvoj znanja
-- 06.8 — Digitalno obrazovanje
-- 06.9 — Razvoj ljudskih potencijala
-- 06.10 — Međunarodna obrazovna i znanstvena suradnja
+- **[06.1 — UPRAVLJANJE OBRAZOVANJEM I ZNANOŠĆU](061-upravljanje-obrazovanjem-i-znanoscu.md)**
+- **[06.2 — OBRAZOVNI SUSTAV](062-obrazovni-sustav.md)**
+- **[06.3 — PREDŠKOLSKO I OSNOVNO OBRAZOVANJE](063-predskolsko-i-osnovno-obrazovanje.md)**
+- **[06.4 — SREDNJOŠKOLSKO OBRAZOVANJE](064-srednjoskolsko-obrazovanje.md)**
+- **[06.5 — VISOKO OBRAZOVANJE](065-visoko-obrazovanje.md)**
+- **[06.6 — ZNANOST I ISTRAŽIVANJE](066-znanost-i-istrazivanje.md)**
+- **[06.7 — AKADEMIJE I RAZVOJ ZNANJA](067-akademije-i-razvoj-znanja.md)**
+- **[06.8 — DIGITALNO OBRAZOVANJE](068-digitalno-obrazovanje.md)**
+- **[06.9 — RAZVOJ LJUDSKIH POTENCIJALA](069-razvoj-ljudskih-potencijala.md)**
+- **[06.10 — MEĐUNARODNA OBRAZOVNA I ZNANSTVENA SURADNJA](0610-medunarodna-obrazovna-i-znanstvena-suradnja.md)**
+
+## HIJERARHIJA
+
+**ZONA 06 → ORGANIZACIJSKA CJELINA → IMP DOKUMENT → PROVEDBA → KVALITETA → NADZOR → REVIZIJA**
+
+## TEMELJNI PRINCIP
+
+**ZNANJE → KOMPETENCIJE → ISTRAŽIVANJE → PRIMJENA → RAZVOJ**
+
+## STATUS ZONE
+
+**ACTIVE — IMPERIOR v1.0**

@@ -1,21 +1,44 @@
----
-title: "06.6 — ZNANOST I ISTRAŽIVANJE"
----
-
 # 06.6 — ZNANOST I ISTRAŽIVANJE
 
-**Zona:** 06 — Obrazovna i znanstvena zona  
-**Status:** ACTIVE
+IMPERIOR — 06 OBRAZOVNA I ZNANSTVENA ZONA
+
+Status: ACTIVE  
+Verzija: 1.0
 
 ## SVRHA
 
-Znanstvena infrastruktura, istraživački programi, instituti, inovacije i prijenos znanja.
+Ovaj dokument definira područje **Znanost I Istraživanje** unutar Zone 06 i njegovo mjesto u obrazovnoj i znanstvenoj arhitekturi IMPERIOR-a.
 
-## TEMELJNA PODRUČJA
+## TEMELJNA NAČELA
 
-- organizacija i upravljanje
-- standardi kvalitete
-- razvoj i dostupnost
-- digitalna podrška i podaci
-- evaluacija i kontinuirano poboljšavanje
-- povezivanje s ostalim zonama sustava IMPERIOR
+- dostupnost i jednakost obrazovnih prilika
+- kvaliteta, mjerljivi ishodi i kontinuirano poboljšanje
+- akademska sloboda uz odgovornost i integritet
+- zaštita prava, dobrobiti i privatnosti učenika i studenata
+- razvoj znanja, kompetencija i kritičkog mišljenja
+- znanstvena etika, transparentnost i provjerljivost
+- digitalna dostupnost i sigurnost
+- cjeloživotno učenje i međunarodna suradnja
+
+## DOKUMENTACIJA
+
+### IMP-06-06-01
+**[Strategija znanstvenog razvoja](imp-06-06-01-strategija-znanstvenog-razvoja.md)**
+
+### IMP-06-06-02
+**[Standard istraživačke kvalitete](imp-06-06-02-standard-istrazivacke-kvalitete.md)**
+
+### IMP-06-06-03
+**[Registar znanstvenih programa](imp-06-06-03-registar-znanstvenih-programa.md)**
+
+## OPERATIVNI MODEL
+
+**PRIORITETI → ISTRAŽIVANJE → ETIKA → KVALITETA → REZULTATI → PRIJENOS ZNANJA**
+
+## NAVIGACIJA
+
+**[← Povratak na Zonu 06](index.md)**
+
+## STATUS DOKUMENTA
+
+**ACTIVE — sastavni dio dokumentacijske strukture IMPERIOR v1.0.**
