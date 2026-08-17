@@ -5,8 +5,6 @@ hidden: false
 ---
 ![](https://files.readme.io/a757cb6361eb48e9db6d6a0cc80849091482bfc62d9573282e6d51da45669481-ChatGPT_Image_17._kol_2026._08_05_40.png)
 
-<br />
-
 ## ENTER IMPERIOR SYSTEM
 
 Access the core architecture of the IMPERIOR documentation system.
@@ -17,7 +15,7 @@ Access the core architecture of the IMPERIOR documentation system.
 
 ### SYSTEM CORE
 
-→ **IMPERIOR DNK**<br />Glavna struktura i hijerarhija sustava
+[→ **IMPERIOR DNK**](/docs/imerior-dnk)<br />Glavna struktura i hijerarhija sustava
 
 → **IMPERIOR ORGANIZATION**<br />Organizacijska arhitektura
 
