@@ -1,29 +1,54 @@
-# POSTUPAK PREVENTIVNIH MJERA
+# IMP-15-08-02 — Postupak preventivnih mjera
 
-**Kod:** IMP-15-08-02
-**Status:** DRAFT
-**Verzija:** 1.0
-**Zona:** 15
-**Cjelina:** 15.8 Korektivne i preventivne mjere
+**Zona:** 15 — Nadzor, kvaliteta i revizija  
+**Modul:** Korektivne i preventivne mjere  
+**Status:** ODOBRENO  
+**Razina:** Operativni dokument Zone 15
 
-## 1. SVRHA
-Dokument definira područje „Postupak preventivnih mjera” unutar Zone 15 sustava IMPERIOR.
+## 1. Svrha
 
-## 2. PODRUČJE PRIMJENE
-Primjenjuje se na povezane organizacijske, stručne, upravljačke i dokumentacijske procese.
+Ovim dokumentom uspostavlja se jedinstven i provjerljiv okvir za područje **postupak preventivnih mjera** unutar Zone 15. Dokument osigurava da se aktivnosti provode dosljedno, mjerljivo, dokumentirano i u skladu s hijerarhijom IMPERIOR sustava.
 
-## 3. TEMELJNE ODREDBE
-- svrha i opseg
-- odgovornosti i nadležnosti
-- standardi primjene
-- evidencija i sljedivost
-- povezivanje s drugim dokumentima
+## 2. Područje primjene
 
-## 4. PROVEDBA
-Provedba se uređuje povezanim aktima, procedurama, registrima i odobrenim operativnim dokumentima.
+Dokument se primjenjuje na sve organizacijske jedinice, procese, odgovorne osobe, registre i izvještajne tokove koji pripadaju modulu **Korektivne i preventivne mjere**. Primjenjuje se na redovne, izvanredne i korektivne aktivnosti.
 
-## 5. NADZOR I REVIZIJA
-Dokument podliježe kontroli verzije, periodičnoj reviziji i usklađivanju.
+## 3. Temeljna načela
 
-## 6. POVEZANI DOKUMENTI
-Povezani dokumenti evidentiraju se kroz IMPERIOR Master Registry.
+- sljedivost odluka i postupaka;
+- mjerljivost rezultata;
+- pravodobno evidentiranje odstupanja;
+- razmjernost nadzornih mjera;
+- jasno utvrđena odgovornost;
+- zaštita integriteta podataka;
+- kontinuirano poboljšanje sustava.
+
+## 4. Odgovornosti
+
+Nositelj modula odgovoran je za provedbu ovog dokumenta, održavanje pripadajućih evidencija i periodično izvještavanje. Sve uključene jedinice dužne su osigurati točne, potpune i provjerljive podatke te provoditi odobrene mjere u zadanim rokovima.
+
+## 5. Operativni postupak
+
+1. Utvrditi predmet i opseg aktivnosti.
+2. Prikupiti relevantne podatke i dokaze.
+3. Provesti procjenu prema unaprijed definiranim kriterijima.
+4. Evidentirati nalaze, odstupanja, rizike ili rezultate.
+5. Odrediti odgovorne osobe i rokove.
+6. Pratiti provedbu utvrđenih mjera.
+7. Zaključiti postupak tek nakon provjere rezultata.
+
+## 6. Evidencije i dokumentacija
+
+Za svaku provedenu aktivnost mora postojati dovoljno zapisa za naknadnu provjeru. Evidencije najmanje sadrže datum, predmet, odgovornu osobu, korištene kriterije, nalaz, poduzetu mjeru, rok i status provedbe.
+
+## 7. Kontrola kvalitete
+
+Dokument i pripadajući postupci podliježu periodičnoj provjeri točnosti, učinkovitosti i usklađenosti. Uočene slabosti moraju se prenijeti u sustav korektivnih i preventivnih mjera.
+
+## 8. Povezanost s drugim dokumentima
+
+Ovaj dokument čini sastavni dio dokumentacijskog seta Zone 15 i tumači se zajedno s temeljnim aktima Zone 15, dokumentima nadzora, revizije, KPI sustava, upravljanja rizicima, usklađenosti, izvještavanja i kontinuiranog poboljšanja.
+
+## 9. Završna odredba
+
+Stupanjem ovog dokumenta u primjenu sva postupanja u području **postupak preventivnih mjera** moraju biti usklađena s ovdje propisanim pravilima i službenom hijerarhijom Zone 15.

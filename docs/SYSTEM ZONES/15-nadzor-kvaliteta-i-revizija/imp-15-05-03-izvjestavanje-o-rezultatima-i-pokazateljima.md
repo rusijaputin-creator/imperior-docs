@@ -1,17 +1,17 @@
-# IMP-15-08-01 — Postupak korektivnih mjera
+# IMP-15-05-03 — Izvještavanje o rezultatima i pokazateljima
 
 **Zona:** 15 — Nadzor, kvaliteta i revizija  
-**Modul:** Korektivne i preventivne mjere  
+**Modul:** Praćenje učinkovitosti i KPI  
 **Status:** ODOBRENO  
 **Razina:** Operativni dokument Zone 15
 
 ## 1. Svrha
 
-Ovim dokumentom uspostavlja se jedinstven i provjerljiv okvir za područje **postupak korektivnih mjera** unutar Zone 15. Dokument osigurava da se aktivnosti provode dosljedno, mjerljivo, dokumentirano i u skladu s hijerarhijom IMPERIOR sustava.
+Ovim dokumentom uspostavlja se jedinstven i provjerljiv okvir za područje **izvještavanje o rezultatima i pokazateljima** unutar Zone 15. Dokument osigurava da se aktivnosti provode dosljedno, mjerljivo, dokumentirano i u skladu s hijerarhijom IMPERIOR sustava.
 
 ## 2. Područje primjene
 
-Dokument se primjenjuje na sve organizacijske jedinice, procese, odgovorne osobe, registre i izvještajne tokove koji pripadaju modulu **Korektivne i preventivne mjere**. Primjenjuje se na redovne, izvanredne i korektivne aktivnosti.
+Dokument se primjenjuje na sve organizacijske jedinice, procese, odgovorne osobe, registre i izvještajne tokove koji pripadaju modulu **Praćenje učinkovitosti i KPI**. Primjenjuje se na redovne, izvanredne i korektivne aktivnosti.
 
 ## 3. Temeljna načela
 
@@ -51,4 +51,4 @@ Ovaj dokument čini sastavni dio dokumentacijskog seta Zone 15 i tumači se zaje
 
 ## 9. Završna odredba
 
-Stupanjem ovog dokumenta u primjenu sva postupanja u području **postupak korektivnih mjera** moraju biti usklađena s ovdje propisanim pravilima i službenom hijerarhijom Zone 15.
+Stupanjem ovog dokumenta u primjenu sva postupanja u području **izvještavanje o rezultatima i pokazateljima** moraju biti usklađena s ovdje propisanim pravilima i službenom hijerarhijom Zone 15.
