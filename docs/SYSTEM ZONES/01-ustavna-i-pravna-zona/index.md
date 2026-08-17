@@ -1,3 +1,6 @@
+---
+hidden: true
+---
 # 01 — USTAVNA I PRAVNA ZONA
 
 IMPERIOR — SYSTEM ZONES
