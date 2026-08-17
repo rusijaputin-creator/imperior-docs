@@ -2,7 +2,7 @@
 title: IMPERIOR DOCUMENT REGISTRY
 excerpt: Zone → organizacijske grane → moduli → dokumenti
 deprecated: false
-hidden: false
+hidden: true
 metadata:
   robots: index
 ---
