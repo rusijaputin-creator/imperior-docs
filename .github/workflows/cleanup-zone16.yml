@@ -1,0 +1,48 @@
+name: Cleanup Zone 16
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  cleanup:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          ref: v1.0
+
+      - name: Remove obsolete Zone 16 files
+        shell: bash
+        run: |
+          cd "docs/SYSTEM ZONES/16-documentation-and-registration-system"
+
+          rm -f \
+            "161-upravljanje-dokumentacijom.md" \
+            "1610-nadzor-dokumentacijskog-sustava.md" \
+            "162-glavni-registar-dokumenata.md" \
+            "163-klasifikacija-i-oznacavanje-dokumenata.md" \
+            "164-verzioniranje-i-kontrola-izmjena.md" \
+            "165-arhiviranje-i-dugorocna-pohrana.md" \
+            "166-registri-i-sluzbene-evidencije.md" \
+            "167-autentikacija-i-integritet-dokumentacije.md" \
+            "168-pristup-ovlasti-i-sljedivost.md" \
+            "169-povezivanje-dokumentacije-izmedu-zona.md"
+
+      - name: Commit cleanup
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
+          git add -A
+
+          if git diff --cached --quiet; then
+            echo "No obsolete Zone 16 files found."
+          else
+            git commit -m "Cleanup obsolete Zone 16 documentation"
+            git push origin HEAD:v1.0
+          fi
