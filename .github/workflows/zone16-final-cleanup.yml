@@ -1,0 +1,74 @@
+name: Zone 16 Final Cleanup
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  cleanup:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout v1.0
+        uses: actions/checkout@v4
+        with:
+          ref: v1.0
+
+      - name: Remove duplicate Zone 16 documents
+        run: |
+          cd "docs/SYSTEM ZONES/16-documentation-and-registration-system"
+
+          rm -f \
+            "imp-16-05-01-standard-statusa-dokumentacije.md" \
+            "imp-16-05-02-postupak-pregleda-i-odobravanja.md" \
+            "imp-16-05-03-registar-odobrenih-dokumenata.md" \
+            "imp-16-06-01-okvir-arhivskog-sustava.md" \
+            "imp-16-06-02-standard-dugorocnog-arhiviranja.md" \
+            "imp-16-06-03-postupak-povrata-arhivirane-dokumentacije.md" \
+            "imp-16-07-01-standard-meudokumentacijskih-veza.md" \
+            "imp-16-07-02-matrica-povezanosti-dokumenata.md" \
+            "imp-16-07-03-postupak-provjere-referenci.md" \
+            "imp-16-08-01-arhitektura-digitalnog-repozitorija.md" \
+            "imp-16-08-02-standard-pohrane-digitalne-dokumentacije.md" \
+            "imp-16-08-03-plan-sigurnosnih-kopija-i-oporavka.md" \
+            "imp-16-09-01-standard-dokumentacijske-kontrole.md" \
+            "imp-16-09-02-postupak-provjere-cjelovitosti-dokumentacije.md" \
+            "imp-16-09-03-izvjestaj-o-dokumentacijskim-odstupanjima.md" \
+            "imp-16-10-01-okvir-dokumentacijske-analitike.md" \
+            "imp-16-10-02-kpi-dokumentacijskog-sustava.md" \
+            "imp-16-10-03-program-razvoja-dokumentacijskog-sustava.md"
+
+      - name: Verify final Zone 16 documents
+        run: |
+          echo "========================================"
+          echo "ZONE 16 - FINAL DOCUMENT STRUCTURE"
+          echo "========================================"
+
+          find "docs/SYSTEM ZONES/16-documentation-and-registration-system" \
+            -maxdepth 1 \
+            -type f \
+            -name "imp-16-*.md" \
+            -printf "%f\n" | sort
+
+          echo "========================================"
+          echo "TOTAL IMP-16 DOCUMENTS:"
+          find "docs/SYSTEM ZONES/16-documentation-and-registration-system" \
+            -maxdepth 1 \
+            -type f \
+            -name "imp-16-*.md" | wc -l
+
+      - name: Commit final cleanup
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
+          git add -A
+
+          if git diff --cached --quiet; then
+            echo "No duplicate Zone 16 documents found."
+          else
+            git commit -m "Finalize canonical Zone 16 document structure"
+            git push origin HEAD:v1.0
+          fi
