@@ -2,7 +2,7 @@
 title: IMPERIOR DNK
 excerpt: Glavna struktura i hijararhija sustava
 deprecated: false
-hidden: false
+hidden: true
 metadata:
   robots: index
 ---
