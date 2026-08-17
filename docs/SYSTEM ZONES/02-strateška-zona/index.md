@@ -1,3 +1,6 @@
+---
+hidden: true
+---
 # 02 — STRATEŠKA ZONA
 
 IMPERIOR — SYSTEM ZONES
