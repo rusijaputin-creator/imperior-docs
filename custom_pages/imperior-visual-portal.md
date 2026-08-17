@@ -1,5 +1,5 @@
 ---
-title: IMPERIOR - VISUAL PORTAL
+title: IMPERIOR - VISUALa PORTAL
 fullscreen: false
 hidden: true
 ---
