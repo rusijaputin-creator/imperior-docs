@@ -90,7 +90,7 @@ This structure provides a predictable and scalable identification system for pro
 
 ## 5. DOCUMENTATION LEVELS
 
-The repository distinguishes four principal views of the IMPERIOR architecture:
+The repository distinguishes four principal views of the IMPERIOR architecture.
 
 ### IMPERIORDNK
 
@@ -164,31 +164,19 @@ Zone 17 connects system design with structured testing, evaluation, scaling, and
 
 The intended documentation lifecycle is:
 
-`CONCEPT`
-
-↓
-
-`DRAFT`
-
-↓
-
-`REVIEW`
-
-↓
-
-`APPROVED`
-
-↓
-
-`ACTIVE`
-
-↓
-
-`REVISED / SUPERSEDED`
-
-↓
-
-`ARCHIVED`
+**CONCEPT**  
+↓  
+**DRAFT**  
+↓  
+**REVIEW**  
+↓  
+**APPROVED**  
+↓  
+**ACTIVE**  
+↓  
+**REVISED / SUPERSEDED**  
+↓  
+**ARCHIVED**
 
 Changes should remain traceable through repository history and the relevant documentation registers.
 
@@ -239,9 +227,6 @@ imperior-docs/
 └── README.md
 ```
 
-└── README.md
-```
-
 Individual System Zone directories contain their respective navigation files, module structures, and documentation.
 
 ---
@@ -250,17 +235,17 @@ Individual System Zone directories contain their respective navigation files, mo
 
 Recommended navigation path:
 
-**Repository**
-
-→ `docs`
-
-→ `SYSTEM ZONES`
-
-→ select a System Zone
-
-→ select a module
-
-→ open the required document.
+**Repository**  
+↓  
+`docs`  
+↓  
+`SYSTEM ZONES`  
+↓  
+**Select a System Zone**  
+↓  
+**Select a module**  
+↓  
+**Open the required document**
 
 Zone-level `index.md` files provide entry points into individual system areas.
 
@@ -275,6 +260,22 @@ Git and GitHub provide the technical version history of the repository.
 Each significant modification should be recorded through a descriptive commit.
 
 The repository history therefore functions as an additional technical audit trail for the development of the documentation architecture.
+
+Recommended commit structure:
+
+```text
+Add / Update / Fix + System Zone or component + short description
+```
+
+Examples:
+
+```text
+Add Zone 17 module navigation
+
+Update Zone 16 documentation structure
+
+Fix document codes and numbering
+```
 
 ---
 
@@ -294,15 +295,26 @@ Current priorities include:
 - documentation presentation;
 - preparation for further system development.
 
+The current repository structure represents the first consolidated documentation architecture of IMPERIOR.
+
 ---
 
 ## 14. PROJECT STATUS
 
 IMPERIOR is an independently developed project and remains under active development.
 
-Documents contained in this repository may represent concepts, proposed standards, system models, research material, implementation frameworks, or working documentation.
+Documents contained in this repository may represent:
 
-Unless explicitly stated otherwise, they should not be interpreted as enacted law, official government policy, or authority granted by any public institution.
+- concepts;
+- proposed standards;
+- system models;
+- research material;
+- implementation frameworks;
+- technical specifications;
+- organizational structures;
+- working documentation.
+
+Unless explicitly stated otherwise, documents contained in this repository should not be interpreted as enacted law, official government policy, regulatory authority, or authority granted by any public institution.
 
 ---
 
@@ -314,12 +326,89 @@ The long-term objective of this repository is to maintain a documentation enviro
 
 without losing its position within the wider system architecture.
 
+The repository is intended to support the transition from:
+
+**system concept**
+
+↓
+
+**structured architecture**
+
+↓
+
+**documented standards**
+
+↓
+
+**controlled development**
+
+↓
+
+**testing and validation**
+
+↓
+
+**implementation models**
+
+↓
+
+**continuous system development**
+
+---
+
+## 16. DOCUMENT TRACEABILITY
+
+Each IMPERIOR document should be identifiable through its position within the system architecture.
+
+The intended traceability chain is:
+
+```text
+IMPERIOR
+   │
+   └── SYSTEM ZONE
+          │
+          └── ORGANIZATIONAL BRANCH
+                 │
+                 └── MODULE
+                        │
+                        └── DOCUMENT
+                               │
+                               ├── VERSION
+                               ├── STATUS
+                               ├── REFERENCES
+                               ├── HISTORY
+                               └── REGISTRY ENTRY
+```
+
+This model allows individual documents to remain connected to the wider architecture even as the repository expands.
+
+---
+
+## 17. ARCHITECTURE SUMMARY
+
+The IMPERIOR repository is designed around four complementary architecture views:
+
+| Architecture | Scope |
+|---|---|
+| **IMPERIORDNK** | System Zones |
+| **IMPERIORORG** | System Zones + Organizational Branches |
+| **IMERIORMOD** | System Zones + Organizational Branches + Modules |
+| **IMPERIORDOC** | System Zones + Organizational Branches + Modules + Documents |
+
+Together, these views provide progressive levels of detail from the overall system architecture to individual documentation units.
+
 ---
 
 # IMPERIOR
 
-**Global System Authority**
+### Global System Authority
 
 **System Architecture • Documentation • Control • Development • Implementation**
 
-Version `v1.0`
+**Repository Version:** `v1.0`
+
+**Development Status:** Active
+
+---
+
+*IMPERIOR Documentation Repository — Structured system architecture and documentation environment.*
