@@ -27,6 +27,62 @@ Use the sections below to access the core documentation structure, organizationa
 
 ***
 
+<div style="max-width: 1100px; margin: 0 auto; padding: 20px;">
+
+  {/* HERO / POČETNA SLIKA -->
+  <div style="text-align: center; margin-bottom: 40px;">
+    <img
+      src="OVDJE_ZALIJEPI_LINK_GORNJE_GLAVNE_SLIKE"
+      alt="IMPERIOR Visual Portal"
+      style="width: 100%; max-width: 1000px; border-radius: 20px; box-shadow: 0 12px 30px rgba(0,0,0,0.25);"
+    />
+  </div>
+
+  <!-- KLIKABILNE KARTICE -->
+  <div style="display: flex; flex-direction: column; gap: 28px; align-items: center;">
+
+    <!-- 1. IMPERIOR DNK -->
+    <a
+      href="https://imperior.readme.io/docs/imperior-dnk"
+      target="_self"
+      style="display: block; text-decoration: none; width: 100%; max-width: 950px;"
+    >
+      <img
+        src="OVDJE_ZALIJEPI_LINK_SLIKE_DNK"
+        alt="IMPERIOR DNK"
+        style="width: 100%; border-radius: 18px; box-shadow: 0 10px 28px rgba(0,0,0,0.25); transition: transform 0.2s ease;"
+      />
+    </a>
+
+    <!-- 2. MASTER REGISTRY -->
+    <a
+      href="OVDJE_ZALIJEPI_LINK_STRANICE_MASTER_REGISTRY"
+      target="_self"
+      style="display: block; text-decoration: none; width: 100%; max-width: 950px;"
+    >
+      <img
+        src="OVDJE_ZALIJEPI_LINK_SLIKE_MASTER_REGISTRY"
+        alt="IMPERIOR Master Registry"
+        style="width: 100%; border-radius: 18px; box-shadow: 0 10px 28px rgba(0,0,0,0.25); transition: transform 0.2s ease;"
+      />
+    </a>
+
+    <!-- 3. GLOBAL SYSTEM */}
+    <a
+      href="OVDJE_ZALIJEPI_LINK_STRANICE_GLOBAL_SYSTEM"
+      target="_self"
+      style="display: block; text-decoration: none; width: 100%; max-width: 950px;"
+    >
+      <img
+        src="OVDJE_ZALIJEPI_LINK_SLIKE_GLOBAL_SYSTEM"
+        alt="IMPERIOR Global System"
+        style="width: 100%; border-radius: 18px; box-shadow: 0 10px 28px rgba(0,0,0,0.25); transition: transform 0.2s ease;"
+      />
+    </a>
+
+  </div>
+</div>
+
 ## MAIN SECTIONS
 
 <Cards>
