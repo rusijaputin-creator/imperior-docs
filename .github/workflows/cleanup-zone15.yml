@@ -1,0 +1,38 @@
+name: Cleanup Zone 15
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  cleanup:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          ref: v1.0
+
+      - name: Run Zone 15 cleanup
+        shell: bash
+        run: |
+          chmod +x "docs/SYSTEM ZONES/15-nadzor-kvaliteta-i-revizija/CLEANUP_ZONE15.sh"
+          "docs/SYSTEM ZONES/15-nadzor-kvaliteta-i-revizija/CLEANUP_ZONE15.sh"
+
+      - name: Commit cleanup
+        shell: bash
+        run: |
+          if git diff --cached --quiet && git diff --quiet; then
+            echo "Nothing to commit."
+            exit 0
+          fi
+
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
+          git add -A
+          git commit -m "Finalize Zone 15 canonical documentation"
+          git push origin HEAD:v1.0
