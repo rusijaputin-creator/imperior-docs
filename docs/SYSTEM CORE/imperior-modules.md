@@ -2,7 +2,7 @@
 title: IMPERIOR MODULES
 excerpt: Moduli sustava
 deprecated: false
-hidden: false
+hidden: true
 metadata:
   robots: index
 ---
