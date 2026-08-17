@@ -1,7 +1,7 @@
 ---
 title: IMPERIOR
 excerpt: Global System Architecture & Documentation
-hidden: false
+hidden: true
 ---
 ![](https://files.readme.io/a757cb6361eb48e9db6d6a0cc80849091482bfc62d9573282e6d51da45669481-ChatGPT_Image_17._kol_2026._08_05_40.png)
 
