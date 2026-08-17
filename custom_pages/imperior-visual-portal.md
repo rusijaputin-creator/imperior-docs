@@ -1,7 +1,7 @@
 ---
 title: IMPERIOR - VISUAL PORTAL
 fullscreen: false
-hidden: false
+hidden: true
 ---
 # IMPERIOR PORTAL
 
