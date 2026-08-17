@@ -1,0 +1,99 @@
+name: Cleanup Zone 02
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  cleanup-zone02:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          ref: v1.0
+
+      - name: Validate Zone 02 before cleanup
+        shell: bash
+        run: |
+          set -e
+
+          ZONE="docs/SYSTEM ZONES/02-strateška-zona"
+
+          echo "Checking Zone 02..."
+          test -d "$ZONE"
+
+          test -f "$ZONE/index.md"
+          test -f "$ZONE/_order.yaml"
+          test -f "$ZONE/ZONE02-CANONICAL-MANIFEST.md"
+
+          for module in 01 02 03 04 05 06 07 08; do
+            COUNT=$(find "$ZONE" -maxdepth 1 -type f -name "imp-02-${module}-*.md" | wc -l)
+            echo "Module ${module}: ${COUNT} documents"
+
+            if [ "$COUNT" -eq 0 ]; then
+              echo "ERROR: Module ${module} contains no canonical documents."
+              exit 1
+            fi
+          done
+
+          echo "Pre-cleanup validation passed."
+
+      - name: Remove explicitly obsolete Zone 02 files
+        shell: bash
+        run: |
+          set -e
+
+          ZONE="docs/SYSTEM ZONES/02-strateška-zona"
+
+          # Only files explicitly confirmed as obsolete may be placed here.
+          OBSOLETE_FILES=(
+          )
+
+          if [ ${#OBSOLETE_FILES[@]} -eq 0 ]; then
+            echo "No obsolete files currently defined."
+            echo "Nothing will be deleted."
+            exit 0
+          fi
+
+          for file in "${OBSOLETE_FILES[@]}"; do
+            TARGET="$ZONE/$file"
+
+            if [ -f "$TARGET" ]; then
+              echo "Removing obsolete file: $file"
+              rm -- "$TARGET"
+            else
+              echo "Already absent: $file"
+            fi
+          done
+
+      - name: Validate Zone 02 after cleanup
+        shell: bash
+        run: |
+          set -e
+
+          ZONE="docs/SYSTEM ZONES/02-strateška-zona"
+
+          test -f "$ZONE/index.md"
+          test -f "$ZONE/_order.yaml"
+          test -f "$ZONE/ZONE02-CANONICAL-MANIFEST.md"
+
+          echo "Post-cleanup validation passed."
+
+      - name: Commit cleanup
+        shell: bash
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
+          if git diff --quiet; then
+            echo "Zone 02 already clean. No commit required."
+            exit 0
+          fi
+
+          git add -A
+          git commit -m "Cleanup Zone 02 obsolete files"
+          git push origin HEAD:v1.0
