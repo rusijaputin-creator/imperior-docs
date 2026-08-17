@@ -1,3 +1,6 @@
+---
+hidden: true
+---
 # 00 — TEMELJI SUSTAVA
 
 IMPERIOR — SYSTEM ZONES
