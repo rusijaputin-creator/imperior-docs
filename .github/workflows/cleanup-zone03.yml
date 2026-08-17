@@ -1,0 +1,130 @@
+name: Cleanup Zone 03
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  cleanup-zone03:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          ref: v1.0
+
+      - name: Validate Zone 03 canonical structure
+        shell: bash
+        run: |
+          set -euo pipefail
+
+          ZONE="docs/SYSTEM ZONES/03-institucijska-i-upravna-zona"
+
+          echo "Checking Zone 03..."
+          cd "$ZONE"
+
+          required_files=(
+            "imp-03-01-01-temeljni-akt-sredisnje-uprave.md"
+            "imp-03-01-02-organizacijska-struktura-sredisnje-uprave.md"
+            "imp-03-01-03-poslovnik-sredisnje-uprave.md"
+
+            "imp-03-02-01-okvir-institucionalnog-sustava.md"
+            "imp-03-02-02-standard-osnivanja-institucija.md"
+            "imp-03-02-03-registar-institucija.md"
+
+            "imp-03-03-01-okvir-agencijskog-sustava.md"
+            "imp-03-03-02-standard-rada-agencija.md"
+            "imp-03-03-03-registar-agencija.md"
+
+            "imp-03-04-01-okvir-sustava-zavoda.md"
+            "imp-03-04-02-standard-rada-zavoda.md"
+            "imp-03-04-03-registar-zavoda.md"
+
+            "imp-03-05-01-okvir-sustava-centara.md"
+            "imp-03-05-02-standard-rada-centara.md"
+            "imp-03-05-03-registar-centara.md"
+
+            "imp-03-06-01-okvir-regionalne-uprave.md"
+            "imp-03-06-02-standard-regionalnih-nadleznosti.md"
+            "imp-03-06-03-koordinacija-regionalne-uprave.md"
+
+            "imp-03-07-01-okvir-lokalne-uprave.md"
+            "imp-03-07-02-standard-lokalnih-nadleznosti.md"
+            "imp-03-07-03-koordinacija-lokalne-uprave.md"
+
+            "imp-03-08-01-temeljni-koordinacijski-okvir.md"
+            "imp-03-08-02-protokol-meuinstitucionalne-koordinacije.md"
+            "imp-03-08-03-evidencija-koordinacijskih-odluka.md"
+          )
+
+          for file in "${required_files[@]}"; do
+            if [[ ! -f "$file" ]]; then
+              echo "ERROR: Missing canonical file: $file"
+              exit 1
+            fi
+          done
+
+          count=$(find . -maxdepth 1 -type f -name 'imp-03-*.md' | wc -l)
+
+          if [[ "$count" -ne 24 ]]; then
+            echo "ERROR: Expected 24 canonical IMP-03 documents, found $count."
+            exit 1
+          fi
+
+          foreign=$(find . -maxdepth 1 -type f -name 'imp-*.md' ! -name 'imp-03-*.md')
+
+          if [[ -n "$foreign" ]]; then
+            echo "ERROR: Foreign IMP files detected in Zone 03:"
+            echo "$foreign"
+            exit 1
+          fi
+
+          echo "Zone 03 canonical validation passed."
+          echo "24/24 canonical documents present."
+          echo "No foreign IMP documents detected."
+
+      - name: Remove explicitly obsolete Zone 03 files
+        shell: bash
+        run: |
+          set -euo pipefail
+
+          cd "docs/SYSTEM ZONES/03-institucijska-i-upravna-zona"
+
+          obsolete_files=(
+          )
+
+          if [[ "${#obsolete_files[@]}" -eq 0 ]]; then
+            echo "No obsolete Zone 03 files defined."
+            echo "Nothing will be deleted."
+            exit 0
+          fi
+
+          for file in "${obsolete_files[@]}"; do
+            if [[ -f "$file" ]]; then
+              echo "Removing obsolete file: $file"
+              rm -f -- "$file"
+            else
+              echo "Already absent: $file"
+            fi
+          done
+
+      - name: Commit cleanup
+        shell: bash
+        run: |
+          set -euo pipefail
+
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
+          git add -A
+
+          if git diff --cached --quiet; then
+            echo "Zone 03 is already clean. No commit required."
+            exit 0
+          fi
+
+          git commit -m "Cleanup Zone 03 canonical structure"
+          git push origin HEAD:v1.0
