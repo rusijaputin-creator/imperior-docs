@@ -45,7 +45,7 @@ Glavni registar sustava.<br />[Open MASTER REGISTRY](#)
 
 ## VISUAL ENTRY
 
-Below this text, insert the main visual portal image.
+<br />
 
 ![]()
 
