@@ -2,7 +2,7 @@
 title: 'IMPERIOR ORGANIZATION '
 excerpt: 'Organizacijska arhitektura sustava '
 deprecated: false
-hidden: false
+hidden: true
 metadata:
   robots: index
 ---
