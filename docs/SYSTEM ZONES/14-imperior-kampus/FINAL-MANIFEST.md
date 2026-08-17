@@ -1,0 +1,32 @@
+# FINAL EXPECTED IMP DOCUMENTS — ZONE 14
+
+- imp-14-01-01-temeljni-akt-imperior-kampusa.md
+- imp-14-01-02-organizacija-upravljanja-kampusom.md
+- imp-14-01-03-standard-operativnog-upravljanja-kampusom.md
+- imp-14-02-01-okvir-rezidencijalnog-sustava-kampusa.md
+- imp-14-02-02-standard-stanovanja-i-rezidencijalnih-jedinica.md
+- imp-14-02-03-registar-rezidencijalnih-kapaciteta.md
+- imp-14-03-01-okvir-zdravstvenih-i-wellness-sadrzaja-kampusa.md
+- imp-14-03-02-standard-zdravstvenih-i-wellness-usluga.md
+- imp-14-03-03-plan-koordinacije-zdravstvene-i-wellness-skrbi.md
+- imp-14-04-01-okvir-obrazovnih-i-istrazivackih-sadrzaja-kampusa.md
+- imp-14-04-02-standard-obrazovnih-i-istrazivackih-centara.md
+- imp-14-04-03-program-razvoja-znanja-i-inovacija-kampusa.md
+- imp-14-05-01-okvir-javnih-i-drustvenih-sadrzaja-kampusa.md
+- imp-14-05-02-standard-javnih-usluga-i-drustvenih-sadrzaja.md
+- imp-14-05-03-registar-javnih-drustvenih-i-usluznih-sadrzaja.md
+- imp-14-06-01-sigurnosni-plan-imperior-kampusa.md
+- imp-14-06-02-standard-kontrole-pristupa-i-zastite-kampusa.md
+- imp-14-06-03-protokol-kriznog-odgovora-kampusa.md
+- imp-14-07-01-plan-prometa-logistike-i-pristupa-kampusu.md
+- imp-14-07-02-standard-unutarnjeg-prometa-i-logistike.md
+- imp-14-07-03-upravljanje-parkiralisnim-i-transportnim-kapacitetima.md
+- imp-14-08-01-plan-zelenih-povrsina-i-rekreacije-kampusa.md
+- imp-14-08-02-standard-sportskih-i-rekreacijskih-sadrzaja.md
+- imp-14-08-03-program-odrzavanja-zelenih-i-rekreacijskih-povrsina.md
+- imp-14-09-01-strategija-digitalne-infrastrukture-kampusa.md
+- imp-14-09-02-standard-digitalnih-sustava-i-povezivosti-kampusa.md
+- imp-14-09-03-plan-upravljanja-digitalnom-infrastrukturom-kampusa.md
+- imp-14-10-01-strategija-razvoja-imperior-kampusa.md
+- imp-14-10-02-standard-odrzivosti-kampusa.md
+- imp-14-10-03-pracenje-kvalitete-i-razvojnih-pokazatelja-kampusa.md
