@@ -513,15 +513,12 @@ Unless explicitly stated otherwise, repository materials should not be interpret
 ---
 
 ## 20. ARCHITECTURE SUMMARY
-
 | View | Scope |
 |---|---|
 | `imperiordnk` | System Zones 00–17 |
 | `imperiororg` | Zones + Organizational Branches |
 | `imeriormod` | Zones + Organizational Branches + Modules |
 | `imperiordoc` | Zones + Organizational Branches + Modules + Documents |
-
-Together, these four views provide progressive levels of detail from the complete IMPERIOR architecture to individual documentation units.
 
 ---
 
