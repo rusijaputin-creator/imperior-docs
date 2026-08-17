@@ -1,0 +1,66 @@
+name: Cleanup Zone 16
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  cleanup-zone16:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout v1.0
+        uses: actions/checkout@v4
+        with:
+          ref: v1.0
+          fetch-depth: 0
+
+      - name: Remove obsolete Zone 16 documents
+        shell: bash
+        run: |
+          BASE="docs/SYSTEM ZONES/16-documentation-and-registration-system"
+
+          rm -f "$BASE/imp-16-05-01-standard-statusa-dokumentacije.md"
+          rm -f "$BASE/imp-16-05-02-postupak-pregleda-i-odobravanja.md"
+          rm -f "$BASE/imp-16-05-03-registar-odobrenih-dokumenata.md"
+
+          rm -f "$BASE/imp-16-06-01-okvir-arhivskog-sustava.md"
+          rm -f "$BASE/imp-16-06-02-standard-dugorocnog-arhiviranja.md"
+          rm -f "$BASE/imp-16-06-03-postupak-povrata-arhivirane-dokumentacije.md"
+
+          rm -f "$BASE/imp-16-07-01-standard-meudokumentacijskih-veza.md"
+          rm -f "$BASE/imp-16-07-02-matrica-povezanosti-dokumenata.md"
+          rm -f "$BASE/imp-16-07-03-postupak-provjere-referenci.md"
+
+          rm -f "$BASE/imp-16-08-01-arhitektura-digitalnog-repozitorija.md"
+          rm -f "$BASE/imp-16-08-02-standard-pohrane-digitalne-dokumentacije.md"
+          rm -f "$BASE/imp-16-08-03-plan-sigurnosnih-kopija-i-oporavka.md"
+
+          rm -f "$BASE/imp-16-09-01-standard-dokumentacijske-kontrole.md"
+          rm -f "$BASE/imp-16-09-02-postupak-provjere-cjelovitosti-dokumentacije.md"
+          rm -f "$BASE/imp-16-09-03-izvjestaj-o-dokumentacijskim-odstupanjima.md"
+
+          rm -f "$BASE/imp-16-10-01-okvir-dokumentacijske-analitike.md"
+          rm -f "$BASE/imp-16-10-02-kpi-dokumentacijskog-sustava.md"
+          rm -f "$BASE/imp-16-10-03-program-razvoja-dokumentacijskog-sustava.md"
+
+          git add -A
+
+      - name: Commit cleanup
+        shell: bash
+        run: |
+          if git diff --cached --quiet; then
+            echo "No obsolete Zone 16 files remain."
+            exit 0
+          fi
+
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
+          git commit \
+            -m "Finalize Zone 16 canonical documentation" \
+            -m "Removes 18 obsolete duplicate Zone 16 documents and preserves the official 30-document IMP-16-01 through IMP-16-10 canonical hierarchy."
+
+          git push origin HEAD:v1.0
