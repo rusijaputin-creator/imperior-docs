@@ -1,0 +1,71 @@
+name: Cleanup Zone 01
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  cleanup-zone01:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          ref: v1.0
+
+      - name: Configure Git
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
+      - name: Remove misplaced Zone 02 documents from Zone 01
+        run: |
+          ZONE_DIR="docs/SYSTEM ZONES/01-ustavna-i-pravna-zona"
+
+          echo "Cleaning Zone 01..."
+
+          rm -f "$ZONE_DIR"/imp-02-01-*.md
+          rm -f "$ZONE_DIR"/imp-02-02-*.md
+          rm -f "$ZONE_DIR"/imp-02-03-*.md
+          rm -f "$ZONE_DIR"/imp-02-04-*.md
+          rm -f "$ZONE_DIR"/imp-02-05-*.md
+          rm -f "$ZONE_DIR"/imp-02-06-*.md
+          rm -f "$ZONE_DIR"/imp-02-07-*.md
+          rm -f "$ZONE_DIR"/imp-02-08-*.md
+
+      - name: Validate canonical Zone 01 structure
+        run: |
+          ZONE_DIR="docs/SYSTEM ZONES/01-ustavna-i-pravna-zona"
+
+          COUNT=$(find "$ZONE_DIR" -maxdepth 1 -type f -name 'imp-01-*.md' | wc -l | tr -d ' ')
+          MISPLACED=$(find "$ZONE_DIR" -maxdepth 1 -type f -name 'imp-02-*.md' | wc -l | tr -d ' ')
+
+          echo "IMP-01 document count: $COUNT"
+          echo "Remaining IMP-02 documents: $MISPLACED"
+
+          if [ "$COUNT" -ne 24 ]; then
+            echo "ERROR: Expected 24 canonical IMP-01 documents."
+            exit 1
+          fi
+
+          if [ "$MISPLACED" -ne 0 ]; then
+            echo "ERROR: Misplaced IMP-02 documents still remain."
+            exit 1
+          fi
+
+      - name: Commit cleanup
+        run: |
+          if git diff --quiet; then
+            echo "No cleanup changes required."
+            exit 0
+          fi
+
+          git add "docs/SYSTEM ZONES/01-ustavna-i-pravna-zona"
+
+          git commit -m "Finalize Zone 01 canonical documentation" \
+            -m "Remove misplaced IMP-02 strategic documentation from Zone 01 and preserve the canonical 24-document constitutional and legal structure."
+
+          git push origin v1.0
