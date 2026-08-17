@@ -1,0 +1,49 @@
+name: Cleanup Zone 16 obsolete documentation
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  cleanup:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout v1.0
+        uses: actions/checkout@v4
+        with:
+          ref: v1.0
+
+      - name: Remove obsolete Zone 16 files
+        shell: bash
+        run: |
+          ZONE_DIR="docs/SYSTEM ZONES/16-documentation-and-registration-system"
+          LIST="$ZONE_DIR/OBSOLETE_FILES_ZONE16.txt"
+          removed=0
+
+          while IFS= read -r file; do
+            [ -z "$file" ] && continue
+            if [ -f "$ZONE_DIR/$file" ]; then
+              git rm "$ZONE_DIR/$file"
+              removed=$((removed+1))
+            fi
+          done < "$LIST"
+
+          echo "Removed $removed obsolete Zone 16 files."
+
+      - name: Commit cleanup
+        shell: bash
+        run: |
+          if git diff --cached --quiet; then
+            echo "Nothing to commit."
+            exit 0
+          fi
+
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
+          git commit -m "Finalize Zone 16 canonical documentation" \
+            -m "Removes obsolete Zone 16 documents and leaves the official IMP-16-01 through IMP-16-10 canonical hierarchy."
+
+          git push origin HEAD:v1.0
