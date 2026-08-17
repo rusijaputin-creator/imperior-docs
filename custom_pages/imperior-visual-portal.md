@@ -47,6 +47,12 @@ Glavni registar sustava.<br />[Open MASTER REGISTRY](#)
 
 Below this text, insert the main visual portal image.
 
+![]()
+
+![](https://files.readme.io/7988252d02a5a4fcca9411600338fe55e38fa4685913a2906bba0efdd8b40f08-ChatGPT_Image_17._kol_2026._08_05_40.png)
+
+<br />
+
 ***
 
 ## STATUS
