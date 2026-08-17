@@ -1,0 +1,73 @@
+name: Cleanup Zone 15 obsolete documents
+
+on:
+  workflow_dispatch:
+  push:
+    branches:
+      - v1.0
+    paths:
+      - ".github/workflows/cleanup-zone15.yml"
+
+permissions:
+  contents: write
+
+jobs:
+  cleanup:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          ref: v1.0
+
+      - name: Remove obsolete Zone 15 documents
+        shell: bash
+        run: |
+          set -e
+          files=(
+          "docs/SYSTEM ZONES/15-nadzor-kvaliteta-i-revizija/imp-15-05-02-standard-provjere-usklaenosti.md"
+          "docs/SYSTEM ZONES/15-nadzor-kvaliteta-i-revizija/imp-15-05-03-registar-zahtjeva-i-odstupanja.md"
+          "docs/SYSTEM ZONES/15-nadzor-kvaliteta-i-revizija/imp-15-06-01-standard-kontrole-dokumentacije.md"
+          "docs/SYSTEM ZONES/15-nadzor-kvaliteta-i-revizija/imp-15-06-02-postupak-pregleda-i-odobravanja-dokumenata.md"
+          "docs/SYSTEM ZONES/15-nadzor-kvaliteta-i-revizija/imp-15-06-03-evidencija-revizija-dokumentacije.md"
+          "docs/SYSTEM ZONES/15-nadzor-kvaliteta-i-revizija/imp-15-07-01-okvir-evaluacije-uspjesnosti.md"
+          "docs/SYSTEM ZONES/15-nadzor-kvaliteta-i-revizija/imp-15-07-02-standard-kpi-nadzora.md"
+          "docs/SYSTEM ZONES/15-nadzor-kvaliteta-i-revizija/imp-15-07-03-izvjestavanje-o-rezultatima-evaluacije.md"
+          "docs/SYSTEM ZONES/15-nadzor-kvaliteta-i-revizija/imp-15-09-01-standard-klasifikacije-revizijskih-nalaza.md"
+          "docs/SYSTEM ZONES/15-nadzor-kvaliteta-i-revizija/imp-15-09-02-postupak-upravljanja-rizicima-kvalitete.md"
+          "docs/SYSTEM ZONES/15-nadzor-kvaliteta-i-revizija/imp-15-09-03-registar-nalaza-i-rizika.md"
+          "docs/SYSTEM ZONES/15-nadzor-kvaliteta-i-revizija/imp-15-10-01-protokol-zavrsne-provjere.md"
+          "docs/SYSTEM ZONES/15-nadzor-kvaliteta-i-revizija/imp-15-10-02-standard-interne-certifikacije.md"
+          "docs/SYSTEM ZONES/15-nadzor-kvaliteta-i-revizija/imp-15-10-03-zavrsno-izvjesce-o-kvaliteti-i-usklaenosti.md"
+          )
+
+          removed=0
+          for file in "${files[@]}"; do
+            if [ -f "$file" ]; then
+              git rm -- "$file"
+              echo "Removed: $file"
+              removed=1
+            else
+              echo "Already absent: $file"
+            fi
+          done
+
+          if [ "$removed" -eq 0 ]; then
+            echo "No obsolete Zone 15 files remain."
+          fi
+
+      - name: Commit cleanup
+        shell: bash
+        run: |
+          if git diff --cached --quiet; then
+            echo "Nothing to commit."
+            exit 0
+          fi
+
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
+          git commit -m "Finalize Zone 15 canonical documentation" \
+                     -m "Removes obsolete duplicate Zone 15 documents and leaves the official 30-document IMP-15-01 through IMP-15-10 hierarchy."
+
+          git push origin HEAD:v1.0
