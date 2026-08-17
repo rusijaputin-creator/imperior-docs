@@ -1,0 +1,217 @@
+name: Zone 04 Validation
+
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - "docs/SYSTEM ZONES/04-sigurnosna-zona/**"
+
+jobs:
+  validate-zone04:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Validate Zone 04 canonical structure
+        shell: bash
+        run: |
+          set -euo pipefail
+
+          ZONE_DIR="docs/SYSTEM ZONES/04-sigurnosna-zona"
+
+          echo "=========================================="
+          echo "IMPERIOR — ZONE 04 VALIDATION"
+          echo "=========================================="
+          echo
+
+          if [ ! -d "$ZONE_DIR" ]; then
+            echo "ERROR: Zone 04 directory does not exist."
+            exit 1
+          fi
+
+          cd "$ZONE_DIR"
+
+          echo "1. Checking canonical manifest..."
+          if [ -f "ZONE04-CANONICAL-MANIFEST.md" ]; then
+            echo "OK: ZONE04-CANONICAL-MANIFEST.md found."
+          else
+            echo "ERROR: ZONE04-CANONICAL-MANIFEST.md missing."
+            exit 1
+          fi
+
+          echo
+          echo "2. Checking structural module files..."
+
+          MODULE_FILES=(
+            "041-imp-safe-sustav.md"
+            "042-policijski-sustav.md"
+            "043-civilna-zastita.md"
+            "044-krizne-sluzbe.md"
+            "045-zastita-osoba.md"
+            "046-zastita-objekata.md"
+            "047-informacijska-sigurnost.md"
+            "048-procjena-prijetnji.md"
+            "049-sigurnosni-nadzor.md"
+            "0410-kontinuitet-i-sigurnosni-razvoj.md"
+          )
+
+          MODULE_MISSING=0
+
+          for file in "${MODULE_FILES[@]}"; do
+            if [ -f "$file" ]; then
+              echo "OK: $file"
+            else
+              echo "MISSING: $file"
+              MODULE_MISSING=$((MODULE_MISSING + 1))
+            fi
+          done
+
+          echo
+          echo "3. Checking canonical IMP-04 documents..."
+
+          EXPECTED_FILES=(
+            "imp-04-01-01-temeljni-sigurnosni-okvir.md"
+            "imp-04-01-02-organizacija-imp-safe-sustava.md"
+            "imp-04-01-03-registar-sigurnosne-dokumentacije.md"
+
+            "imp-04-02-01-okvir-policijskog-sustava.md"
+            "imp-04-02-02-standard-policijskih-postupanja.md"
+            "imp-04-02-03-koordinacija-policijskih-funkcija.md"
+
+            "imp-04-03-01-okvir-civilne-zastite.md"
+            "imp-04-03-02-plan-pripravnosti-civilne-zastite.md"
+            "imp-04-03-03-protokol-aktivacije-i-koordinacije.md"
+
+            "imp-04-04-01-okvir-kriznih-sluzbi.md"
+            "imp-04-04-02-operativni-krizni-protokol.md"
+            "imp-04-04-03-koordinacija-kriznih-sluzbi.md"
+
+            "imp-04-05-01-standard-zastite-osoba.md"
+            "imp-04-05-02-procjena-sigurnosnog-rizika-osoba.md"
+            "imp-04-05-03-protokol-zastitnih-mjera.md"
+
+            "imp-04-06-01-standard-zastite-objekata.md"
+            "imp-04-06-02-procjena-sigurnosti-objekata.md"
+            "imp-04-06-03-plan-fizicke-i-tehnicke-zastite.md"
+
+            "imp-04-07-01-okvir-informacijske-sigurnosti.md"
+            "imp-04-07-02-standard-zastite-informacija.md"
+            "imp-04-07-03-postupak-upravljanja-sigurnosnim-incidentima.md"
+
+            "imp-04-08-01-metodologija-procjene-prijetnji.md"
+            "imp-04-08-02-registar-sigurnosnih-rizika.md"
+            "imp-04-08-03-postupak-odgovora-na-prijetnje.md"
+
+            "imp-04-09-01-okvir-sigurnosnog-nadzora.md"
+            "imp-04-09-02-standard-nadzornih-postupaka.md"
+            "imp-04-09-03-izvjestavanje-o-sigurnosnom-stanju.md"
+
+            "imp-04-10-01-plan-kontinuiteta-sigurnosnih-funkcija.md"
+            "imp-04-10-02-program-razvoja-sigurnosnog-sustava.md"
+            "imp-04-10-03-revizija-sigurnosne-otpornosti.md"
+          )
+
+          MISSING_COUNT=0
+
+          for file in "${EXPECTED_FILES[@]}"; do
+            if [ -f "$file" ]; then
+              echo "OK: $file"
+            else
+              echo "MISSING: $file"
+              MISSING_COUNT=$((MISSING_COUNT + 1))
+            fi
+          done
+
+          echo
+          echo "4. Counting IMP-04 documents..."
+
+          IMP_COUNT=$(find . -maxdepth 1 -type f -name "imp-04-*.md" | wc -l | tr -d ' ')
+
+          echo "Found IMP-04 documents: $IMP_COUNT"
+          echo "Expected canonical documents: 30"
+
+          if [ "$IMP_COUNT" -ne 30 ]; then
+            echo "WARNING: Expected exactly 30 IMP-04 documents."
+          else
+            echo "OK: Canonical IMP document count is 30."
+          fi
+
+          echo
+          echo "5. Checking for foreign-zone IMP files..."
+
+          FOREIGN_FILES=$(find . -maxdepth 1 -type f -name "imp-*.md" \
+            ! -name "imp-04-*.md" || true)
+
+          if [ -n "$FOREIGN_FILES" ]; then
+            echo "WARNING: Foreign-zone IMP files detected:"
+            echo "$FOREIGN_FILES"
+          else
+            echo "OK: No foreign-zone IMP files detected."
+          fi
+
+          echo
+          echo "6. Checking duplicate IMP document codes..."
+
+          DUPLICATES=$(
+            find . -maxdepth 1 -type f -name "imp-04-*.md" \
+            | sed 's|^\./||' \
+            | grep -oE '^imp-04-[0-9]{2}-[0-9]{2}' \
+            | sort \
+            | uniq -d || true
+          )
+
+          if [ -n "$DUPLICATES" ]; then
+            echo "ERROR: Duplicate IMP document codes detected:"
+            echo "$DUPLICATES"
+            exit 1
+          else
+            echo "OK: No duplicate IMP document codes detected."
+          fi
+
+          echo
+          echo "7. Checking support files..."
+
+          for file in "index.md" "_order.yaml"; do
+            if [ -f "$file" ]; then
+              echo "OK: $file"
+            else
+              echo "WARNING: $file is missing."
+            fi
+          done
+
+          echo
+          echo "=========================================="
+          echo "ZONE 04 VALIDATION SUMMARY"
+          echo "=========================================="
+          echo "Missing canonical documents: $MISSING_COUNT"
+          echo "Missing structural modules: $MODULE_MISSING"
+          echo "IMP-04 document count: $IMP_COUNT"
+          echo
+
+          if [ "$MISSING_COUNT" -gt 0 ]; then
+            echo "VALIDATION FAILED: canonical documents are missing."
+            exit 1
+          fi
+
+          if [ "$MODULE_MISSING" -gt 0 ]; then
+            echo "VALIDATION FAILED: structural module files are missing."
+            exit 1
+          fi
+
+          if [ "$IMP_COUNT" -ne 30 ]; then
+            echo "VALIDATION FAILED: IMP-04 document count is not exactly 30."
+            exit 1
+          fi
+
+          if [ -n "$FOREIGN_FILES" ]; then
+            echo "VALIDATION FAILED: foreign-zone IMP files detected."
+            exit 1
+          fi
+
+          echo "ZONE 04 VALIDATION PASSED"
+          echo "Canonical documents: 30 / 30"
+          echo "Structural modules: 10 / 10"
+          echo "Foreign-zone contamination: NONE"
+          echo "Duplicate document codes: NONE"
