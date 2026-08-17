@@ -237,17 +237,21 @@ imperior-docs/
 ├── .gitignore
 │
 └── README.md
+```
+
 Individual System Zone directories contain their respective navigation files, module structures, and documentation.
 
-11. DOCUMENTATION NAVIGATION
+---
+
+## 11. DOCUMENTATION NAVIGATION
 
 Recommended navigation path:
 
-Repository
+**Repository**
 
-→ docs
+→ `docs`
 
-→ SYSTEM ZONES
+→ `SYSTEM ZONES`
 
 → select a System Zone
 
@@ -255,11 +259,13 @@ Repository
 
 → open the required document.
 
-Zone-level index.md files provide entry points into individual system areas.
+Zone-level `index.md` files provide entry points into individual system areas.
 
 Module navigation files provide an additional layer between the System Zone and individual documents.
 
-12. VERSION CONTROL
+---
+
+## 12. VERSION CONTROL
 
 Git and GitHub provide the technical version history of the repository.
 
@@ -267,22 +273,27 @@ Each significant modification should be recorded through a descriptive commit.
 
 The repository history therefore functions as an additional technical audit trail for the development of the documentation architecture.
 
-13. CURRENT DEVELOPMENT STAGE
+---
 
-Repository version: v1.0
+## 13. CURRENT DEVELOPMENT STAGE
+
+**Repository version:** v1.0
 
 Current priorities include:
 
-consolidation of the System Zone architecture;
-normalization of module navigation;
-documentation consistency;
-validation of document codes;
-cross-zone reference control;
-Master Registry development;
-repository navigation;
-documentation presentation;
-preparation for further system development.
-14. PROJECT STATUS
+- consolidation of the System Zone architecture;
+- normalization of module navigation;
+- documentation consistency;
+- validation of document codes;
+- cross-zone reference control;
+- Master Registry development;
+- repository navigation;
+- documentation presentation;
+- preparation for further system development.
+
+---
+
+## 14. PROJECT STATUS
 
 IMPERIOR is an independently developed project and remains under active development.
 
@@ -290,18 +301,22 @@ Documents contained in this repository may represent concepts, proposed standard
 
 Unless explicitly stated otherwise, they should not be interpreted as enacted law, official government policy, or authority granted by any public institution.
 
-15. REPOSITORY OBJECTIVE
+---
+
+## 15. REPOSITORY OBJECTIVE
 
 The long-term objective of this repository is to maintain a documentation environment in which every major component of IMPERIOR can be:
 
-identified → located → reviewed → connected → versioned → validated → developed
+**identified → located → reviewed → connected → versioned → validated → developed**
 
-without losing its position within the wider system architecture
+without losing its position within the wider system architecture.
 
-IMPERIOR
+---
 
-Global System Authority
+# IMPERIOR
 
-System Architecture • Documentation • Control • Development • Implementation
+**Global System Authority**
 
-Version v1.0
+**System Architecture • Documentation • Control • Development • Implementation**
+
+Version `v1.0`
