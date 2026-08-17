@@ -1,0 +1,186 @@
+name: Zone 02 Canonical Validation
+
+on:
+  workflow_dispatch:
+
+jobs:
+  validate-zone02:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          ref: v1.0
+
+      - name: Validate Zone 02 canonical structure
+        shell: bash
+        run: |
+          set -e
+
+          ZONE="docs/SYSTEM ZONES/02-strateška-zona"
+
+          echo "======================================"
+          echo "IMPERIOR ZONE 02 VALIDATION"
+          echo "======================================"
+          echo
+
+          if [ ! -d "$ZONE" ]; then
+            echo "ERROR: Zone 02 directory not found."
+            exit 1
+          fi
+
+          cd "$ZONE"
+
+          REQUIRED_FILES=(
+            "imp-02-01-01-temeljni-akt-strateskog-centra.md"
+            "imp-02-01-02-organizacija-strateskog-centra.md"
+            "imp-02-01-03-protokol-strateskog-odlucivanja.md"
+
+            "imp-02-02-01-okvir-dugorocnog-planiranja.md"
+            "imp-02-02-02-metodologija-strateskog-planiranja.md"
+            "imp-02-02-03-registar-dugorocnih-planova.md"
+
+            "imp-02-03-01-model-strateskog-upravljanja.md"
+            "imp-02-03-02-matrica-upravljackih-odgovornosti.md"
+            "imp-02-03-03-protokol-koordinacije-sustava.md"
+
+            "imp-02-04-01-strateski-analiticki-okvir.md"
+            "imp-02-04-02-metodologija-analize-podataka.md"
+            "imp-02-04-03-standard-strateskog-izvjestavanja.md"
+
+            "imp-02-05-01-kpi-okvir.md"
+            "imp-02-05-02-metodologija-mjerenja-rezultata.md"
+            "imp-02-05-03-registar-pokazatelja-uspjesnosti.md"
+            "imp-02-05-04-standard-kpi-izvjestavanja.md"
+
+            "imp-02-06-01-okvir-upravljanja-rizicima.md"
+            "imp-02-06-02-metodologija-procjene-rizika.md"
+            "imp-02-06-03-registar-strateskih-rizika.md"
+            "imp-02-06-04-matrica-strateskih-rizika.md"
+            "imp-02-06-05-protokol-odgovora-na-rizik.md"
+
+            "imp-02-07-01-strateski-krizni-okvir.md"
+            "imp-02-07-02-protokol-kriznog-odlucivanja.md"
+            "imp-02-07-03-plan-kontinuiteta-strateskih-funkcija.md"
+            "imp-02-07-04-plan-kontinuiteta-sustava.md"
+
+            "imp-02-08-01-okvir-razvojnih-programa.md"
+            "imp-02-08-02-postupak-odobravanja-razvojnih-programa.md"
+            "imp-02-08-03-pracenje-i-evaluacija-razvojnih-programa.md"
+          )
+
+          PROTECTED_FILES=(
+            "021-strateski-centar.md"
+            "022-dugorocno-planiranje.md"
+            "023-upravljanje-sustavom.md"
+            "024-analitika.md"
+            "025-kpi-i-mjerenje-rezultata.md"
+            "026-upravljanje-rizicima.md"
+            "027-krizno-upravljanje.md"
+            "028-razvojni-programi.md"
+            "_order.yaml"
+            "index.md"
+            "ZONE02-CANONICAL-MANIFEST.md"
+          )
+
+          missing=0
+
+          echo "Checking canonical IMP-02 documents..."
+          echo
+
+          for file in "${REQUIRED_FILES[@]}"; do
+            if [ -f "$file" ]; then
+              echo "OK      $file"
+            else
+              echo "MISSING $file"
+              missing=$((missing + 1))
+            fi
+          done
+
+          echo
+          echo "Checking protected structural files..."
+          echo
+
+          for file in "${PROTECTED_FILES[@]}"; do
+            if [ -f "$file" ]; then
+              echo "OK      $file"
+            else
+              echo "MISSING $file"
+              missing=$((missing + 1))
+            fi
+          done
+
+          echo
+          echo "Checking canonical document count..."
+
+          actual_count=$(find . -maxdepth 1 -type f -name 'imp-02-*.md' | wc -l | tr -d ' ')
+
+          echo "Expected canonical IMP-02 documents: 28"
+          echo "Actual IMP-02 documents:             $actual_count"
+
+          echo
+          echo "Checking for foreign-zone IMP documents..."
+
+          foreign_files=$(find . -maxdepth 1 -type f -name 'imp-*.md' ! -name 'imp-02-*.md' -print)
+
+          if [ -n "$foreign_files" ]; then
+            echo "WARNING: Foreign-zone IMP documents detected:"
+            echo "$foreign_files"
+          else
+            echo "OK: No foreign-zone IMP documents detected."
+          fi
+
+          echo
+          echo "Checking for unregistered IMP-02 documents..."
+
+          extra=0
+
+          while IFS= read -r file; do
+            filename=$(basename "$file")
+            registered=0
+
+            for canonical in "${REQUIRED_FILES[@]}"; do
+              if [ "$filename" = "$canonical" ]; then
+                registered=1
+                break
+              fi
+            done
+
+            if [ "$registered" -eq 0 ]; then
+              echo "UNREGISTERED $filename"
+              extra=$((extra + 1))
+            fi
+          done < <(find . -maxdepth 1 -type f -name 'imp-02-*.md' | sort)
+
+          echo
+          echo "======================================"
+          echo "ZONE 02 VALIDATION SUMMARY"
+          echo "======================================"
+          echo "Missing required files: $missing"
+          echo "Unregistered IMP-02 files: $extra"
+          echo "Actual IMP-02 count: $actual_count"
+          echo
+
+          if [ "$missing" -gt 0 ]; then
+            echo "VALIDATION FAILED"
+            exit 1
+          fi
+
+          if [ "$actual_count" -ne 28 ]; then
+            echo "VALIDATION WARNING:"
+            echo "Expected exactly 28 canonical IMP-02 documents."
+            echo "Review unregistered or missing files before cleanup."
+            exit 1
+          fi
+
+          if [ "$extra" -gt 0 ]; then
+            echo "VALIDATION WARNING:"
+            echo "Unregistered IMP-02 files exist."
+            echo "No automatic deletion has been performed."
+            exit 1
+          fi
+
+          echo "ZONE 02 VALIDATION PASSED"
+          echo "Canonical structure verified."
+          echo "No files were deleted."
