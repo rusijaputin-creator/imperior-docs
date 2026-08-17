@@ -1,7 +1,7 @@
 ---
 title: IMPERIOR - MASTER REGISTRY
 deprecated: false
-hidden: false
+hidden: true
 metadata:
   robots: index
 ---
